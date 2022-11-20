@@ -1,4 +1,3 @@
-
 body {
     font-family: tahoma;
     height: 100vh;
@@ -16,7 +15,7 @@ body {
     background-color: #f7f5ec;
     text-align: center;
     overflow: hidden;
-    position: relative; 
+    position: relative;
 }
 
 .our-team .img {
@@ -99,15 +98,15 @@ body {
 }
 
 .our-team .social li a {
-display: block;
-padding: 10px;
-font-size: 17px;
-color: white;
-transition: all 0.3s ease 0s;
-text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
 }
 
 .our-team .social li a:hover {
     color: #1369ce;
-    background-color:  #13005D;
+    background-color: #13005D;
 }
