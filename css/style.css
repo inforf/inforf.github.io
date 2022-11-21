@@ -10,7 +10,7 @@
 body {
     height: 100vh;
     background-size: cover;
-    background: gray;
+    background: linear-gradient(140deg, #13005D, #1369ce);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,18 +18,19 @@ body {
 
 .our-team {
     width: 400px;
-    padding: 30px 0 40px;
+    padding: 30px 0 60px;
     margin-bottom: 30px;
     background-color: #f7f5ec;
     text-align: center;
     overflow: hidden;
     position: relative;
+    border-radius: 3%;
 }
 
 .our-team .img {
     display: inline-block;
-    height: 130px;
-    width: 130px;
+    height: 200px;
+    width: 200px;
     margin-bottom: 50px;
     z-index: 1;
     position: relative;
@@ -57,7 +58,8 @@ body {
 .our-team .img::after {
     content: "";
     width: 100%;
-    height: 100%;
+    height: 100%;    
+    border: 2px solid;
     border-radius: 50%;
     background-color: #13005D;
     position: absolute;
@@ -69,7 +71,7 @@ body {
 .our-team .img img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
+    border-radius: 50%;    
     transform: scale(1);
     transition: all 0.9s ease 0s;
 }
@@ -108,7 +110,7 @@ body {
 .our-team .social li a {
     display: block;
     padding: 10px;
-    font-size: 17px;
+    font-size: 30px;
     color: white;
     transition: all 0.3s ease 0s;
     text-decoration: none;
