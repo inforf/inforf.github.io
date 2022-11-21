@@ -109,3 +109,19 @@ body {
     color: #1369ce;
     background-color: #13005D;
 }
+
+.contact-btn {
+    display: inline-block;
+    padding: 12px 50px;
+    color: #13005D;
+    border: 2px solid #13005D;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition: .3s linear;
+    text-decoration: none;
+}
+
+.contact-btn:hover{
+    color: white;
+    background-color: #13005D;
+}
