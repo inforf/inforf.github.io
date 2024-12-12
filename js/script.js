@@ -24,8 +24,7 @@ window.onload = function () {
                 imageHeight: 400,
                 background: "#ffe7d1",
                 color: "#d10000",
-                confirmButtonText: "🎁 Obrigado!",
-                footer: "<a href='https://pt.wikipedia.org/wiki/Natal' style='color:#d10000'>Saiba mais sobre o Natal</a>"
+                confirmButtonText: "🎁 Obrigado!"                
             });
         };
 
