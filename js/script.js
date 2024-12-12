@@ -6,7 +6,7 @@ window.onload = function() {
         button.innerText = 'Boas festas!';
         button.classList.add('pedidoOperador', 'btn', 'btn-success', 'js-shortcut-blank');
         button.style.fontSize = '16px';
-        button.style.padding = '10px 20px';
+        button.style.padding = '10px 10px';
         button.style.marginTop = '10px';
         button.style.position = 'relative';
         button.style.width = 'auto';
@@ -32,8 +32,8 @@ window.onload = function() {
         buttonContainer.classList.add('navbar-header');
         //buttonContainer.style.justifyContent = 'center';
        // buttonContainer.style.alignItems = 'center';
-        buttonContainer.style.height = '100%';
-        buttonContainer.style.width = '100%';
+       // buttonContainer.style.height = '100%';
+        // buttonContainer.style.width = '100%';
         //buttonContainer.style.marginTop = '20px';
 
         buttonContainer.appendChild(button);
