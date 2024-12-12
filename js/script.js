@@ -4,6 +4,7 @@ window.onload = function() {
     script.onload = function () {
         var button = document.createElement('button');
         button.innerText = 'Clique para Feliz Natal!';
+        button.classList.add('pedidoOperador', 'btn', 'btn-success', 'btn-block', 'js-shortcut-blank');
         button.style.fontSize = '16px';
         button.style.padding = '10px 20px';
         button.style.backgroundColor = '#ffe7d1';
