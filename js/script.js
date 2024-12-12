@@ -3,7 +3,7 @@ window.onload = function () {
     script.src = "https://cdn.jsdelivr.net/npm/sweetalert2@11";
     script.onload = function () {
         var link = document.createElement('a');
-        link.innerText = 'Boas Festas!';
+        link.innerText = '🎄Boas Festas!🎆';
         link.href = '#';
         link.style.display = 'block';
         link.style.textAlign = 'center';
@@ -18,9 +18,9 @@ window.onload = function () {
             event.preventDefault();
             Swal.fire({
                 title: "🎄 Feliz Natal e um Próspero Ano Novo! 🎆",
-                text: "Desejo que este Natal seja repleto de amor, alegria e união, e que o ano novo traga novas conquistas e realizações para você e sua família!",
+                text: "Desejamos que este Natal seja repleto de amor, alegria e união, e que o ano novo traga novas conquistas e realizações para você e sua família!",
                 imageUrl: "https://png.pngtree.com/thumb_back/fh260/background/20241025/pngtree-merry-christmas-2024-image_16452006.jpg",
-                imageWidth: 300,
+                imageWidth: 400,
                 imageHeight: 400,
                 background: "#ffe7d1",
                 color: "#d10000",
