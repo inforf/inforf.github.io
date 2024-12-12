@@ -27,7 +27,7 @@ window.onload = function() {
         };
 
         var checkElementExist = setInterval(function() {
-            var targetElement = document.querySelector('div.row:nth-child(2)');
+            var targetElement = document.querySelector('div.row:nth-child(2) > div:nth-child(1)');
             
             if (targetElement) {
                 targetElement.style.display = 'flex';
