@@ -8,10 +8,10 @@ window.onload = function() {
         button.style.fontSize = '16px';
         button.style.padding = '10px 20px';
         button.style.marginLeft = 'auto';
-        button.style.marginRight = '10px'; // Um pouco de espaço à direita
+        button.style.marginRight = '10px';
         button.style.marginTop = '10px';   // Espaçamento no topo
         button.style.position = 'relative';
-        button.style.width = 'auto';        // Evita que o botão ocupe toda a largura
+        button.style.width = 'auto';
         button.style.display = 'inline-block'; // Torna o botão inline com os outros elementos
 
         button.onclick = function() {
@@ -34,6 +34,7 @@ window.onload = function() {
             if (targetElement) {
                 targetElement.style.display = 'flex';
                 targetElement.style.justifyContent = 'flex-end';
+                targetElement.style.alignItems = 'center';  
                 targetElement.style.position = 'relative';
                 targetElement.appendChild(button);
                 clearInterval(checkElementExist);
