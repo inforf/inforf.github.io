@@ -10,28 +10,28 @@ window.onload = function () {
         link.style.fontSize = '20px';
         link.style.color = '#d10000';
         link.style.fontWeight = 'bold';
-        link.style.marginBottom = '10px';
+        link.style.marginTop = '10px';
         link.style.textDecoration = 'none';
         link.style.cursor = 'pointer';
 
         link.onclick = function (event) {
             event.preventDefault();
             Swal.fire({
-                title: "🎄 Feliz Natal e um Próspero Ano Novo! 🎆",
-                text: "Desejamos que este Natal seja repleto de amor, alegria e união, e que o ano novo traga novas conquistas e realizações para você e sua família!",
+                title: "<span style='font-size: 24px;'>🎄 Feliz Natal e um Próspero Ano Novo! 🎆</span>",
+                html: "<p style='font-size: 18px;'>Desejamos que este Natal seja repleto de amor, alegria e união, e que o ano novo traga novas conquistas e realizações para você e sua família!</p>",
                 imageUrl: "https://png.pngtree.com/thumb_back/fh260/background/20241025/pngtree-merry-christmas-2024-image_16452006.jpg",
                 imageWidth: 400,
                 imageHeight: 400,
                 background: "#ffe7d1",
                 color: "#d10000",
-                confirmButtonText: "🎁 Obrigado!"                
+                confirmButtonText: "🎁 Obrigado!"
             });
         };
 
         var targetElement = document.querySelector('#divListaLoja > div:nth-child(6)');
         if (targetElement) {
             targetElement.style.position = 'relative';
-            targetElement.insertBefore(link, targetElement.firstChild);
+            targetElement.appendChild(link); // Adiciona o link como o último elemento
         } else {
             console.error("O elemento '#divListaLoja > div:nth-child(6)' não foi encontrado.");
         }
