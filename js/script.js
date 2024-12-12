@@ -1,4 +1,4 @@
-nterwindow.onload = function() {
+window.onload = function() {
     var script = document.createElement("script");
     script.src = "https://cdn.jsdelivr.net/npm/sweetalert2@11";
     script.onload = function () {
@@ -6,12 +6,12 @@ nterwindow.onload = function() {
         button.innerText = 'Clique aqui';
         button.classList.add('pedidoOperador', 'btn', 'btn-success', 'js-shortcut-blank');
         button.style.fontSize = '16px';
-        button.style.padding = '10px 10px';
+        button.style.padding = '10px 20px';
         button.style.marginTop = '10px';
-        button.style.marginRight = '20px';  
-        button.style.position = 'center';
+        button.style.position = 'relative';
         button.style.width = 'auto';
         button.style.display = 'inline-block';
+        button.style.marginBottom = '20px';
 
         button.onclick = function() {
             Swal.fire({
@@ -28,13 +28,14 @@ nterwindow.onload = function() {
         };
 
         var buttonContainer = document.createElement('div');
-        buttonContainer.classList.add('navbar-header');
+        buttonContainer.classList.add('navbar-header'); 
         buttonContainer.style.display = 'flex';
-        buttonContainer.style.justifyContent = 'flex-start'; 
+        buttonContainer.style.justifyContent = 'flex-end'; 
         buttonContainer.style.alignItems = 'center';
-        buttonContainer.style.marginLeft = 'auto';  
+        buttonContainer.style.height = '100%';
+        buttonContainer.style.width = '100%';
         buttonContainer.style.marginTop = '20px';
-        buttonContainer.style.paddingRight = '20px';  
+
         buttonContainer.appendChild(button);
 
         var checkElementExist = setInterval(function() {
