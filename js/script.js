@@ -30,7 +30,7 @@ nterwindow.onload = function() {
         var buttonContainer = document.createElement('div');
         buttonContainer.classList.add('navbar-header');
         // buttonContainer.style.display = 'flex';
-       // buttonContainer.style.justifyContent = 'flex-start'; 
+        buttonContainer.style.justifyContent = 'flex-start'; 
         buttonContainer.style.alignItems = 'center';
         buttonContainer.style.marginLeft = 'auto';  
         buttonContainer.style.marginTop = '20px';
