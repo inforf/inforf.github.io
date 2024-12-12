@@ -6,9 +6,9 @@ window.onload = function() {
         button.innerText = 'Clique aqui';
         button.classList.add('pedidoOperador', 'btn', 'btn-success', 'js-shortcut-blank');
         button.style.fontSize = '16px';
-        button.style.padding = '10px 20px';
+        button.style.padding = '10px 10px';
         button.style.marginTop = '10px';
-        button.style.position = 'relative';
+        // button.style.position = 'relative';
         button.style.width = 'auto';
         button.style.display = 'inline-block';
         button.style.marginBottom = '20px';
