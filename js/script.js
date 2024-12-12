@@ -11,7 +11,7 @@ nterwindow.onload = function() {
         button.style.marginRight = '20px';  
         button.style.position = 'center';
         button.style.width = 'auto';
-        // button.style.display = 'inline-block';
+        button.style.display = 'inline-block';
 
         button.onclick = function() {
             Swal.fire({
@@ -32,7 +32,7 @@ nterwindow.onload = function() {
         // buttonContainer.style.display = 'flex';
        // buttonContainer.style.justifyContent = 'flex-start'; 
         buttonContainer.style.alignItems = 'center';
-       // buttonContainer.style.marginLeft = 'auto';  
+        buttonContainer.style.marginLeft = 'auto';  
         buttonContainer.style.marginTop = '20px';
         buttonContainer.style.paddingRight = '20px';  
         buttonContainer.appendChild(button);
