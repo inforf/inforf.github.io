@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     var script = document.createElement("script");
     script.src = "https://cdn.jsdelivr.net/npm/sweetalert2@11";
     script.onload = function () {
@@ -10,8 +10,8 @@ window.onload = function() {
         button.style.margin = '0px';
         button.style.width = 'auto';
         button.style.display = 'inline-block';
-        
-        button.onclick = function() {
+
+        button.onclick = function () {
             Swal.fire({
                 title: "🎄 Feliz Natal e um Próspero Ano Novo! 🎆",
                 text: "Desejo que este Natal seja repleto de amor, alegria e união, e que o ano novo traga novas conquistas e realizações para você e sua família!",
@@ -26,29 +26,16 @@ window.onload = function() {
         };
 
         var buttonContainer = document.createElement('div');
-        //buttonContainer.classList.add('navbar');
-        //buttonContainer.style.position = 'relative';
-        buttonContainer.style.display = 'block'; 
-        buttonContainer.style.right = '0'; 
-        buttonContainer.style.top = '0';
-        buttonContainer.style.zIndex = '9999'; 
+        buttonContainer.style.position = 'fixed'; // Torna o botão flutuante
+        buttonContainer.style.right = '10px'; // Alinha à direita
+        buttonContainer.style.top = '50%'; // Centraliza verticalmente
+        buttonContainer.style.transform = 'translateY(-50%)'; // Ajusta para ficar exatamente ao meio
+        buttonContainer.style.zIndex = '9999'; // Garante que está acima de outros elementos
 
         buttonContainer.appendChild(button);
 
-        var checkElementExist = setInterval(function() {
-            var targetElement = document.querySelector('div.row:nth-child(2)');
-            
-            if (targetElement) {
-                targetElement.style.display = 'flex';  
-                targetElement.style.justifyContent = 'flex-start'; 
-                targetElement.style.alignItems = 'center';  
-                targetElement.style.position = 'relative'; 
-                targetElement.style.zIndex = '1'; 
-
-                targetElement.appendChild(buttonContainer);
-                clearInterval(checkElementExist);
-            }
-        }, 100);
+        // Adiciona o botão ao corpo da página
+        document.body.appendChild(buttonContainer);
     };
     document.head.appendChild(script);
 };
