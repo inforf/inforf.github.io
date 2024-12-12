@@ -3,13 +3,35 @@ window.onload = function () {
     script.src = "https://cdn.jsdelivr.net/npm/sweetalert2@11";
     script.onload = function () {
         var button = document.createElement('button');
-        button.innerText = 'Boas Festas!';
-        button.classList.add('pedidoOperador', 'btn', 'btn-success', 'js-shortcut-blank');
-        button.style.fontSize = '14px';
-        button.style.padding = '10px 10px';
-        button.style.margin = '0px';
-        button.style.width = 'auto';
-        button.style.display = 'inline-block';
+        button.innerText = '';
+        button.classList.add('pedidoOperador', 'js-shortcut-blank');
+        button.style.width = '100px';
+        button.style.height = '120px';
+        button.style.backgroundColor = 'green';
+        button.style.clipPath = 'polygon(50% 0%, 0% 100%, 100% 100%)';
+        button.style.position = 'absolute';
+        button.style.border = 'none';
+        button.style.cursor = 'pointer';
+
+        var decoration = document.createElement('div');
+        decoration.style.width = '20px';
+        decoration.style.height = '20px';
+        decoration.style.backgroundColor = 'red';
+        decoration.style.borderRadius = '50%';
+        decoration.style.position = 'absolute';
+        decoration.style.top = '-10px';
+        decoration.style.left = 'calc(50% - 10px)';
+
+        var trunk = document.createElement('div');
+        trunk.style.width = '20px';
+        trunk.style.height = '30px';
+        trunk.style.backgroundColor = '#8B4513';
+        trunk.style.position = 'absolute';
+        trunk.style.bottom = '-30px';
+        trunk.style.left = 'calc(50% - 10px)';
+
+        button.appendChild(decoration);
+        button.appendChild(trunk);
 
         button.onclick = function () {
             Swal.fire({
@@ -26,15 +48,13 @@ window.onload = function () {
         };
 
         var buttonContainer = document.createElement('div');
-        buttonContainer.style.position = 'fixed'; // Torna o botão flutuante
-        buttonContainer.style.right = '10px'; // Alinha à direita
-        buttonContainer.style.top = '50%'; // Centraliza verticalmente
-        buttonContainer.style.transform = 'translateY(-50%)'; // Ajusta para ficar exatamente ao meio
-        buttonContainer.style.zIndex = '9999'; // Garante que está acima de outros elementos
+        buttonContainer.style.position = 'fixed';
+        buttonContainer.style.right = '10px';
+        buttonContainer.style.top = '50%';
+        buttonContainer.style.transform = 'translateY(-50%)';
+        buttonContainer.style.zIndex = '9999';
 
         buttonContainer.appendChild(button);
-
-        // Adiciona o botão ao corpo da página
         document.body.appendChild(buttonContainer);
     };
     document.head.appendChild(script);
