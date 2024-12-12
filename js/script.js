@@ -39,7 +39,7 @@ window.onload = function() {
         buttonContainer.appendChild(button);
 
         var checkElementExist = setInterval(function() {
-            var targetElement = document.querySelector('div.row.menu-container-navegacao-links');
+            var targetElement = document.querySelector('div.row:nth-child(2)');
             
             if (targetElement) {
                 targetElement.style.display = 'flex';  
