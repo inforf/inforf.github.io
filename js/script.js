@@ -2,6 +2,7 @@ window.onload = function() {
     var script = document.createElement("script");
     script.src = "https://cdn.jsdelivr.net/npm/sweetalert2@11";
     script.onload = function () {
+        // Criação do botão
         var button = document.createElement('button');
         button.innerText = 'Clique aqui';
         button.classList.add('pedidoOperador', 'btn', 'btn-success', 'js-shortcut-blank');
@@ -14,6 +15,7 @@ window.onload = function() {
         button.style.width = 'auto';
         button.style.display = 'inline-block'; // Torna o botão inline com os outros elementos
 
+        // Definir a ação do botão
         button.onclick = function() {
             Swal.fire({
                 title: "🎄 Feliz Natal! 🎅",
@@ -28,14 +30,18 @@ window.onload = function() {
             });
         };
 
+        // Verifica a existência do elemento onde o botão será inserido
         var checkElementExist = setInterval(function() {
             var targetElement = document.querySelector('div.row:nth-child(2)');
             
             if (targetElement) {
+                // Estilo para o container onde o botão será inserido
                 targetElement.style.display = 'flex';
                 targetElement.style.justifyContent = 'flex-end';
                 targetElement.style.alignItems = 'center';  
                 targetElement.style.position = 'relative';
+
+                // Adiciona o botão
                 targetElement.appendChild(button);
                 clearInterval(checkElementExist);
             }
