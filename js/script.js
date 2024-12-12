@@ -8,12 +8,10 @@ window.onload = function() {
         button.classList.add('pedidoOperador', 'btn', 'btn-success', 'js-shortcut-blank');
         button.style.fontSize = '16px';
         button.style.padding = '10px 20px';
-        button.style.marginLeft = 'auto';
-        button.style.marginRight = '10px';
-        button.style.marginTop = '10px';   // Espaçamento no topo
+        button.style.marginTop = '10px'; 
         button.style.position = 'relative';
         button.style.width = 'auto';
-        button.style.display = 'inline-block'; // Torna o botão inline com os outros elementos
+        button.style.display = 'inline-block'; 
 
         // Definir a ação do botão
         button.onclick = function() {
@@ -30,19 +28,30 @@ window.onload = function() {
             });
         };
 
-        // Verifica a existência do elemento onde o botão será inserido
+       
+        var buttonContainer = document.createElement('div');
+        buttonContainer.style.display = 'flex';
+        buttonContainer.style.justifyContent = 'center';  
+        buttonContainer.style.alignItems = 'center';  
+        buttonContainer.style.height = '100%';  
+        buttonContainer.style.width = '100%';  
+
+        
+        buttonContainer.appendChild(button);
+
+        
         var checkElementExist = setInterval(function() {
             var targetElement = document.querySelector('div.row:nth-child(2)');
             
             if (targetElement) {
-                // Estilo para o container onde o botão será inserido
+                
                 targetElement.style.display = 'flex';
                 targetElement.style.justifyContent = 'flex-end';
                 targetElement.style.alignItems = 'center';  
                 targetElement.style.position = 'relative';
 
-                // Adiciona o botão
-                targetElement.appendChild(button);
+                
+                targetElement.appendChild(buttonContainer);
                 clearInterval(checkElementExist);
             }
         }, 100);
