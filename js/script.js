@@ -33,17 +33,20 @@ window.onload = function() {
         buttonContainer.style.height = '100%';
         buttonContainer.style.width = 'auto';  // Ajuste para a largura automática
         buttonContainer.style.marginTop = '20px';
+        buttonContainer.style.position = 'relative';  // Ajuste para a posição relativa
+        buttonContainer.style.zIndex = '9999';  // Garantir que fique acima de outras divs
 
         buttonContainer.appendChild(button);
 
         var checkElementExist = setInterval(function() {
-            var targetElement = document.querySelector('div.row:nth-child(2)');
+            var targetElement = document.querySelector('div.row.menu-container-navegacao-links');
             
             if (targetElement) {
                 targetElement.style.display = 'flex';  // Flexbox para garantir alinhamento horizontal
                 targetElement.style.justifyContent = 'flex-start';  // Manter os elementos na mesma linha
                 targetElement.style.alignItems = 'center';  
-                targetElement.style.position = 'relative';
+                targetElement.style.position = 'relative';  // Garantir que o elemento tenha posição relativa
+                targetElement.style.zIndex = '1';  // Pode ajustar o z-index do container original, se necessário
 
                 targetElement.appendChild(buttonContainer);
                 clearInterval(checkElementExist);
