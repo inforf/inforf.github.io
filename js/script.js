@@ -25,7 +25,7 @@ window.onload = function () {
                 background: "#ffe7d1",
                 color: "#d10000",
                 confirmButtonText: "🎁 Obrigado!",
-                width: '700px' 
+                width: '600px' 
             });
         };
 
