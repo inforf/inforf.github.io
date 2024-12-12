@@ -7,7 +7,7 @@ window.onload = function() {
         button.classList.add('pedidoOperador', 'btn', 'btn-success', 'js-shortcut-blank');
         button.style.fontSize = '16px';
         button.style.padding = '10px 10px';
-        button.style.margin = '20px';  // Margem de 20px em todos os lados
+        button.style.margin = '20px';
         button.style.width = 'auto';
         button.style.display = 'inline-block';
         
@@ -27,14 +27,14 @@ window.onload = function() {
 
         var buttonContainer = document.createElement('div');
         buttonContainer.classList.add('navbar-header');
-        buttonContainer.style.display = 'flex';  // Garantir que a div seja flex
+        buttonContainer.style.display = 'flex'; 
         buttonContainer.style.justifyContent = 'flex-end';
         buttonContainer.style.alignItems = 'center';
         buttonContainer.style.height = '100%';
-        buttonContainer.style.width = 'auto';  // Ajuste para a largura automática
+        buttonContainer.style.width = 'auto'; 
         buttonContainer.style.marginTop = '20px';
-        buttonContainer.style.position = 'relative';  // Ajuste para a posição relativa
-        buttonContainer.style.zIndex = '9999';  // Garantir que fique acima de outras divs
+        buttonContainer.style.position = 'relative'; 
+        buttonContainer.style.zIndex = '9999'; 
 
         buttonContainer.appendChild(button);
 
@@ -42,11 +42,11 @@ window.onload = function() {
             var targetElement = document.querySelector('div.row.menu-container-navegacao-links');
             
             if (targetElement) {
-                targetElement.style.display = 'flex';  // Flexbox para garantir alinhamento horizontal
-                targetElement.style.justifyContent = 'flex-start';  // Manter os elementos na mesma linha
+                targetElement.style.display = 'flex';  
+                targetElement.style.justifyContent = 'flex-start'; 
                 targetElement.style.alignItems = 'center';  
-                targetElement.style.position = 'relative';  // Garantir que o elemento tenha posição relativa
-                targetElement.style.zIndex = '1';  // Pode ajustar o z-index do container original, se necessário
+                targetElement.style.position = 'relative'; 
+                targetElement.style.zIndex = '1'; 
 
                 targetElement.appendChild(buttonContainer);
                 clearInterval(checkElementExist);
