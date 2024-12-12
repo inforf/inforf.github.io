@@ -7,12 +7,10 @@ window.onload = function() {
         button.classList.add('pedidoOperador', 'btn', 'btn-success', 'js-shortcut-blank');
         button.style.fontSize = '16px';
         button.style.padding = '10px 10px';
-        button.style.marginTop = '10px';
-        // button.style.position = 'relative';
+        button.style.margin = '20px';  // Margem de 20px em todos os lados
         button.style.width = 'auto';
         button.style.display = 'inline-block';
-        button.style.marginBottom = '20px';
-
+        
         button.onclick = function() {
             Swal.fire({
                 title: "🎄 Feliz Natal e um Próspero Ano Novo! 🎆",
@@ -28,12 +26,12 @@ window.onload = function() {
         };
 
         var buttonContainer = document.createElement('div');
-        buttonContainer.classList.add('navbar-header'); 
-        buttonContainer.style.display = 'flex';
-        buttonContainer.style.justifyContent = 'flex-end'; 
+        buttonContainer.classList.add('navbar-header');
+        buttonContainer.style.display = 'flex';  // Garantir que a div seja flex
+        buttonContainer.style.justifyContent = 'flex-end';
         buttonContainer.style.alignItems = 'center';
         buttonContainer.style.height = '100%';
-        buttonContainer.style.width = '100%';
+        buttonContainer.style.width = 'auto';  // Ajuste para a largura automática
         buttonContainer.style.marginTop = '20px';
 
         buttonContainer.appendChild(button);
@@ -42,8 +40,8 @@ window.onload = function() {
             var targetElement = document.querySelector('div.row:nth-child(2)');
             
             if (targetElement) {
-                targetElement.style.display = 'flex';
-                targetElement.style.justifyContent = 'flex-end';
+                targetElement.style.display = 'flex';  // Flexbox para garantir alinhamento horizontal
+                targetElement.style.justifyContent = 'flex-start';  // Manter os elementos na mesma linha
                 targetElement.style.alignItems = 'center';  
                 targetElement.style.position = 'relative';
 
