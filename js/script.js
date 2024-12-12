@@ -31,7 +31,7 @@ window.onload = function () {
         var targetElement = document.querySelector('#divListaLoja > div:nth-child(6)');
         if (targetElement) {
             targetElement.style.position = 'relative';
-            targetElement.appendChild(link); // Adiciona o link como o último elemento
+            targetElement.appendChild(link);
         } else {
             console.error("O elemento '#divListaLoja > div:nth-child(6)' não foi encontrado.");
         }
