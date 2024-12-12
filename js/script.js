@@ -44,7 +44,7 @@ window.onload = function () {
     var style = document.createElement("style");
     style.textContent = `
         .custom-swal-width {
-            max-width: 700px !important; /* Altere o valor para ajustar a largura */
+            max-width: 700px !important; 
         }
     `;
     document.head.appendChild(style);
