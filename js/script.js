@@ -7,6 +7,7 @@ window.onload = function() {
         button.classList.add('pedidoOperador', 'btn', 'btn-success', 'btn-block', 'js-shortcut-blank');
         button.style.fontSize = '16px';
         button.style.padding = '10px 20px';
+        button.style.marginLeft = 'auto';
         button.style.position = 'relative';
         
 
