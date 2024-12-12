@@ -1,4 +1,4 @@
-window.onload = function() {
+nterwindow.onload = function() {
     var script = document.createElement("script");
     script.src = "https://cdn.jsdelivr.net/npm/sweetalert2@11";
     script.onload = function () {
@@ -9,7 +9,7 @@ window.onload = function() {
         button.style.padding = '10px 20px';
         button.style.marginTop = '10px';
         button.style.marginRight = '20px';  
-        button.style.position = 'relative';
+        button.style.position = 'center';
         button.style.width = 'auto';
         button.style.display = 'inline-block';
 
@@ -29,7 +29,7 @@ window.onload = function() {
 
         var buttonContainer = document.createElement('div');
         buttonContainer.classList.add('navbar-header');
-        buttonContainer.style.display = 'flex';
+        // buttonContainer.style.display = 'flex';
         buttonContainer.style.justifyContent = 'flex-start'; 
         buttonContainer.style.alignItems = 'center';
         buttonContainer.style.marginLeft = 'auto';  
