@@ -6,12 +6,12 @@ nterwindow.onload = function() {
         button.innerText = 'Clique aqui';
         button.classList.add('pedidoOperador', 'btn', 'btn-success', 'js-shortcut-blank');
         button.style.fontSize = '16px';
-        button.style.padding = '10px 20px';
+        button.style.padding = '10px 10px';
         button.style.marginTop = '10px';
         button.style.marginRight = '20px';  
         button.style.position = 'center';
         button.style.width = 'auto';
-        button.style.display = 'inline-block';
+        // button.style.display = 'inline-block';
 
         button.onclick = function() {
             Swal.fire({
@@ -30,9 +30,9 @@ nterwindow.onload = function() {
         var buttonContainer = document.createElement('div');
         buttonContainer.classList.add('navbar-header');
         // buttonContainer.style.display = 'flex';
-        buttonContainer.style.justifyContent = 'flex-start'; 
+       // buttonContainer.style.justifyContent = 'flex-start'; 
         buttonContainer.style.alignItems = 'center';
-        buttonContainer.style.marginLeft = 'auto';  
+       // buttonContainer.style.marginLeft = 'auto';  
         buttonContainer.style.marginTop = '20px';
         buttonContainer.style.paddingRight = '20px';  
         buttonContainer.appendChild(button);
