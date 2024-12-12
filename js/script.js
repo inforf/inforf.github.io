@@ -1,7 +1,8 @@
+
 var script = document.createElement("script");
 script.src = "https://cdn.jsdelivr.net/npm/sweetalert2@11";
 script.onload = function () {
-    
+ 
     var button = document.createElement('button');
     button.innerText = 'Clique para Feliz Natal!';
     button.style.fontSize = '16px';
@@ -11,12 +12,12 @@ script.onload = function () {
     button.style.border = 'none';
     button.style.cursor = 'pointer';
 
-   
+ 
     button.onclick = function() {
         Swal.fire({
             title: "🎄 Feliz Natal! 🎅",
             text: "Que seu Natal seja repleto de alegria, amor e paz!",
-            imageUrl: "https://png.pngtree.com/thumb_back/fh260/background/20241025/pngtree-merry-christmas-2024-image_16452006.jpg", // Link funcional para uma imagem de Natal
+            imageUrl: "https://png.pngtree.com/thumb_back/fh260/background/20241025/pngtree-merry-christmas-2024-image_16452006.jpg",
             imageWidth: 300,
             imageHeight: 400,
             background: "#ffe7d1",
@@ -27,7 +28,12 @@ script.onload = function () {
     };
 
   
-    document.body.appendChild(button);
+    var targetElement = document.querySelector('#avisosContainer > p:nth-child(1)');
+    
+   
+    if (targetElement) {
+        targetElement.appendChild(button);
+    }
 };
 
 
