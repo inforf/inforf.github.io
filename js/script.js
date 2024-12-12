@@ -9,6 +9,7 @@ script.onload = function () {
     button.style.color = '#d10000';
     button.style.border = 'none';
     button.style.cursor = 'pointer';
+    button.style.float = 'right'; 
 
     button.onclick = function() {
         Swal.fire({
@@ -25,7 +26,7 @@ script.onload = function () {
     };
 
     var checkElementExist = setInterval(function() {
-        var targetElement = document.querySelector('body > div:nth-child(7) > div:nth-child(4) > form > div:nth-child(7) > div:nth-child(1) > div:nth-child(1) > div > p > span');
+        var targetElement = document.querySelector('div.row:nth-child(2)');
         
         if (targetElement) {
             targetElement.appendChild(button);
