@@ -17,35 +17,25 @@ window.onload = function () {
         link.onclick = function (event) {
             event.preventDefault();
             Swal.fire({
-                title: "<span style='font-size: 24px;'>🎄 Feliz Natal e um Próspero Ano Novo! 🎆</span>",
-                html: "<p style='font-size: 18px;'>Desejamos que este Natal seja repleto de amor, alegria e união, e que o ano novo traga novas conquistas e realizações para você e sua família!</p>",
+                title: "🎄 Feliz Natal e um Próspero Ano Novo! 🎆",
+                text: "Desejamos que este Natal seja repleto de amor, alegria e união, e que o ano novo traga novas conquistas e realizações para você e sua família!",
                 imageUrl: "https://png.pngtree.com/thumb_back/fh260/background/20241025/pngtree-merry-christmas-2024-image_16452006.jpg",
                 imageWidth: 400,
                 imageHeight: 400,
                 background: "#ffe7d1",
                 color: "#d10000",
                 confirmButtonText: "🎁 Obrigado!",
-                customClass: {
-                    popup: 'custom-swal-width'
-                }
+                width: '700px' 
             });
         };
 
         var targetElement = document.querySelector('#divListaLoja > div:nth-child(6)');
         if (targetElement) {
             targetElement.style.position = 'relative';
-            targetElement.appendChild(link); 
+            targetElement.appendChild(link);
         } else {
             console.error("O elemento '#divListaLoja > div:nth-child(6)' não foi encontrado.");
         }
     };
     document.head.appendChild(script);
-
-    var style = document.createElement("style");
-    style.textContent = `
-        .custom-swal-width {
-            max-width: 700px !important; 
-        }
-    `;
-    document.head.appendChild(style);
 };
