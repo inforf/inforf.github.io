@@ -42,8 +42,8 @@ window.onload = function() {
             
             if (targetElement) {
                 targetElement.style.display = 'flex';
-                targetElement.style.justifyContent = 'flex-end';
-                //targetElement.style.alignItems = 'center';  
+                buttonContainer.style.justifyContent = 'flex-end'
+                targetElement.style.alignItems = 'center';  
                 targetElement.style.position = 'relative';
 
                 targetElement.appendChild(buttonContainer);
