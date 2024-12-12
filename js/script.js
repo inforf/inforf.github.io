@@ -11,6 +11,8 @@ window.onload = function() {
         button.style.border = 'none';
         button.style.cursor = 'pointer';
         button.style.marginLeft = 'auto';
+        button.style.zIndex = '9999';
+        button.style.position = 'relative';
 
         button.onclick = function() {
             Swal.fire({
@@ -27,11 +29,12 @@ window.onload = function() {
         };
 
         var checkElementExist = setInterval(function() {
-            var targetElement = document.querySelector('div.row:nth-child(2) > div:nth-child(1)');
+            var targetElement = document.querySelector('div.row:nth-child(2)');
             
             if (targetElement) {
                 targetElement.style.display = 'flex';
                 targetElement.style.justifyContent = 'flex-end';
+                targetElement.style.position = 'relative';
                 targetElement.appendChild(button);
                 clearInterval(checkElementExist);
             }
