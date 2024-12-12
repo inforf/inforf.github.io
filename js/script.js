@@ -15,8 +15,8 @@ window.onload = function() {
 
         button.onclick = function() {
             Swal.fire({
-                title: "🎄 Feliz Natal! 🎅",
-                text: "Que seu Natal seja repleto de alegria, amor e paz!",
+                title: "🎄 Feliz Natal e um Próspero Ano Novo! 🎆",
+                text: "Desejo que este Natal seja repleto de amor, alegria e união, e que o ano novo traga novas conquistas e realizações para você e sua família!",
                 imageUrl: "https://png.pngtree.com/thumb_back/fh260/background/20241025/pngtree-merry-christmas-2024-image_16452006.jpg",
                 imageWidth: 300,
                 imageHeight: 400,
