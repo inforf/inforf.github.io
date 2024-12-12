@@ -5,7 +5,7 @@ window.onload = function() {
         var button = document.createElement('button');
         button.innerText = 'Boas Festas!';
         button.classList.add('pedidoOperador', 'btn', 'btn-success', 'js-shortcut-blank');
-        button.style.fontSize = '16px';
+        button.style.fontSize = '14px';
         button.style.padding = '10px 10px';
         button.style.margin = '0px';
         button.style.width = 'auto';
