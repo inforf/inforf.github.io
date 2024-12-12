@@ -3,17 +3,9 @@ window.onload = function() {
     script.src = "https://cdn.jsdelivr.net/npm/sweetalert2@11";
     script.onload = function () {
         var button = document.createElement('button');
-        button.innerText = 'Clique para Feliz Natal!';
+        button.innerText = 'Clique aqui';
         button.classList.add('pedidoOperador', 'btn', 'btn-success', 'btn-block', 'js-shortcut-blank');
-        //button.style.fontSize = '16px';
-       // button.style.padding = '10px 20px';
-        //button.style.backgroundColor = '#ffe7d1';
-        //button.style.color = '#d10000';
-       // button.style.border = 'none';
-        //button.style.cursor = 'pointer';
-       // button.style.marginLeft = 'auto';
-       // button.style.zIndex = '9999';
-       // button.style.position = 'relative';
+        
 
         button.onclick = function() {
             Swal.fire({
