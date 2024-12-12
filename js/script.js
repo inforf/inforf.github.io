@@ -26,8 +26,9 @@ window.onload = function() {
         };
 
         var buttonContainer = document.createElement('div');
-        buttonContainer.classList.add('navbar-header');
-        buttonContainer.style.position = 'absolute';
+        buttonContainer.classList.add('navbar');
+        buttonContainer.style.position = 'relative';
+        buttonContainer.style.display = 'block'; 
         buttonContainer.style.right = '0'; 
         buttonContainer.style.top = '0';
         buttonContainer.style.zIndex = '9999'; 
