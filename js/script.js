@@ -4,7 +4,6 @@ window.onload = function () {
     script.onload = function () {
         var button = document.createElement('button');
         button.innerText = '';
-        button.classList.add('pedidoOperador', 'js-shortcut-blank');
         button.style.width = '100px';
         button.style.height = '120px';
         button.style.backgroundColor = 'green';
