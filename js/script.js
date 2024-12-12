@@ -3,7 +3,7 @@ window.onload = function() {
     script.src = "https://cdn.jsdelivr.net/npm/sweetalert2@11";
     script.onload = function () {
         var button = document.createElement('button');
-        button.innerText = 'Baos festas!';
+        button.innerText = 'Boas festas!';
         button.classList.add('pedidoOperador', 'btn', 'btn-success', 'js-shortcut-blank');
         button.style.fontSize = '16px';
         button.style.padding = '10px 20px';
