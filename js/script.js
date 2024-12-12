@@ -29,6 +29,7 @@ window.onload = function() {
 
         var buttonContainer = document.createElement('div');
         buttonContainer.style.display = 'flex';
+        buttonContainer.classList.add('navbar-header');
         //buttonContainer.style.justifyContent = 'center';
        // buttonContainer.style.alignItems = 'center';
         buttonContainer.style.height = '100%';
