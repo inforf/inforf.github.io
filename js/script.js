@@ -1,8 +1,6 @@
-
 var script = document.createElement("script");
 script.src = "https://cdn.jsdelivr.net/npm/sweetalert2@11";
 script.onload = function () {
- 
     var button = document.createElement('button');
     button.innerText = 'Clique para Feliz Natal!';
     button.style.fontSize = '16px';
@@ -12,7 +10,6 @@ script.onload = function () {
     button.style.border = 'none';
     button.style.cursor = 'pointer';
 
- 
     button.onclick = function() {
         Swal.fire({
             title: "🎄 Feliz Natal! 🎅",
@@ -27,14 +24,11 @@ script.onload = function () {
         });
     };
 
-  
     var targetElement = document.querySelector('#avisosContainer > p:nth-child(1)');
     
-   
     if (targetElement) {
         targetElement.appendChild(button);
     }
 };
-
 
 document.head.appendChild(script);
