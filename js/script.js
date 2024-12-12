@@ -10,7 +10,7 @@ window.onload = function() {
         button.style.color = '#d10000';
         button.style.border = 'none';
         button.style.cursor = 'pointer';
-        button.style.float = 'right'; 
+        button.style.marginLeft = 'auto';
 
         button.onclick = function() {
             Swal.fire({
@@ -30,10 +30,12 @@ window.onload = function() {
             var targetElement = document.querySelector('div.row:nth-child(2)');
             
             if (targetElement) {
+                targetElement.style.display = 'flex';
+                targetElement.style.justifyContent = 'flex-end';
                 targetElement.appendChild(button);
-                clearInterval(checkElementExist); 
+                clearInterval(checkElementExist);
             }
-        }, 100); 
+        }, 100);
     };
     document.head.appendChild(script);
 };
