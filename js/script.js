@@ -27,13 +27,9 @@ window.onload = function() {
 
         var buttonContainer = document.createElement('div');
         buttonContainer.classList.add('navbar-header');
-        //buttonContainer.style.display = 'flex'; 
-        //buttonContainer.style.justifyContent = 'flex-end';
-        //buttonContainer.style.alignItems = 'center';
-       // buttonContainer.style.height = '100%';
-       // buttonContainer.style.width = 'auto'; 
-        //buttonContainer.style.marginTop = '20px';
-       // buttonContainer.style.position = 'relative'; 
+        buttonContainer.style.position = 'absolute';
+        buttonContainer.style.right = '0'; 
+        buttonContainer.style.top = '0';
         buttonContainer.style.zIndex = '9999'; 
 
         buttonContainer.appendChild(button);
