@@ -5,9 +5,9 @@ window.onload = function() {
         var button = document.createElement('button');
         button.innerText = 'Clique aqui';
         button.classList.add('pedidoOperador', 'btn', 'btn-success', 'js-shortcut-blank');
-        button.style.fontSize = '12px';
+        button.style.fontSize = '16px';
         button.style.padding = '10px 10px';
-        //button.style.margin = '20px';
+        button.style.margin = '0px';
         button.style.width = 'auto';
         button.style.display = 'inline-block';
         
@@ -32,7 +32,7 @@ window.onload = function() {
         buttonContainer.style.alignItems = 'center';
         buttonContainer.style.height = '100%';
         buttonContainer.style.width = 'auto'; 
-        buttonContainer.style.marginTop = '20px';
+        //buttonContainer.style.marginTop = '20px';
         buttonContainer.style.position = 'relative'; 
         buttonContainer.style.zIndex = '9999'; 
 
