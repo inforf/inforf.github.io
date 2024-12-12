@@ -2,37 +2,20 @@ window.onload = function () {
     var script = document.createElement("script");
     script.src = "https://cdn.jsdelivr.net/npm/sweetalert2@11";
     script.onload = function () {
-        var button = document.createElement('button');
-        button.innerText = '';
-        button.style.width = '100px';
-        button.style.height = '120px';
-        button.style.backgroundColor = 'green';
-        button.style.clipPath = 'polygon(50% 0%, 0% 100%, 100% 100%)';
-        button.style.position = 'absolute';
-        button.style.border = 'none';
-        button.style.cursor = 'pointer';
+        var link = document.createElement('a');
+        link.innerText = 'Boas Festas!';
+        link.href = '#';
+        link.style.display = 'block';
+        link.style.textAlign = 'center';
+        link.style.fontSize = '20px';
+        link.style.color = '#d10000';
+        link.style.fontWeight = 'bold';
+        link.style.marginBottom = '10px';
+        link.style.textDecoration = 'none';
+        link.style.cursor = 'pointer';
 
-        var decoration = document.createElement('div');
-        decoration.style.width = '20px';
-        decoration.style.height = '20px';
-        decoration.style.backgroundColor = 'red';
-        decoration.style.borderRadius = '50%';
-        decoration.style.position = 'absolute';
-        decoration.style.top = '-10px';
-        decoration.style.left = 'calc(50% - 10px)';
-
-        var trunk = document.createElement('div');
-        trunk.style.width = '20px';
-        trunk.style.height = '30px';
-        trunk.style.backgroundColor = '#8B4513';
-        trunk.style.position = 'absolute';
-        trunk.style.bottom = '-30px';
-        trunk.style.left = 'calc(50% - 10px)';
-
-        button.appendChild(decoration);
-        button.appendChild(trunk);
-
-        button.onclick = function () {
+        link.onclick = function (event) {
+            event.preventDefault();
             Swal.fire({
                 title: "🎄 Feliz Natal e um Próspero Ano Novo! 🎆",
                 text: "Desejo que este Natal seja repleto de amor, alegria e união, e que o ano novo traga novas conquistas e realizações para você e sua família!",
@@ -46,15 +29,13 @@ window.onload = function () {
             });
         };
 
-        var buttonContainer = document.createElement('div');
-        buttonContainer.style.position = 'fixed';
-        buttonContainer.style.right = '10px';
-        buttonContainer.style.top = '50%';
-        buttonContainer.style.transform = 'translateY(-50%)';
-        buttonContainer.style.zIndex = '9999';
-
-        buttonContainer.appendChild(button);
-        document.body.appendChild(buttonContainer);
+        var targetElement = document.querySelector('#divListaLoja > div:nth-child(6)');
+        if (targetElement) {
+            targetElement.style.position = 'relative';
+            targetElement.insertBefore(link, targetElement.firstChild);
+        } else {
+            console.error("O elemento '#divListaLoja > div:nth-child(6)' não foi encontrado.");
+        }
     };
     document.head.appendChild(script);
 };
