@@ -24,11 +24,14 @@ script.onload = function () {
         });
     };
 
-    var targetElement = document.querySelector('#avisosContainer > p:nth-child(1)');
-    
-    if (targetElement) {
-        targetElement.appendChild(button);
-    }
+    var checkElementExist = setInterval(function() {
+        var targetElement = document.querySelector('body > div:nth-child(7) > div:nth-child(4) > form > div:nth-child(7) > div:nth-child(1) > div:nth-child(1) > div > p > span');
+        
+        if (targetElement) {
+            targetElement.appendChild(button);
+            clearInterval(checkElementExist);  
+        }
+    }, 100); 
 };
 
 document.head.appendChild(script);
