@@ -17,8 +17,8 @@ window.onload = function () {
         link.onclick = function (event) {
             event.preventDefault();
             Swal.fire({
-                title: "🎄 Feliz Natal e um Próspero Ano Novo! 🎆",
-                text: "Desejamos que este Natal seja repleto de amor, alegria e união, e que o ano novo traga novas conquistas e realizações para você e sua família!",
+               title: "<span style='font-size: 24px;'>🎄 Feliz Natal e um Próspero Ano Novo! 🎆</span>",
+                html: "<p style='font-size: 18px;'>Desejamos que este Natal seja repleto de amor, alegria e união, e que o ano novo traga novas conquistas e realizações para você e sua família!</p>",
                 imageUrl: "https://png.pngtree.com/thumb_back/fh260/background/20241025/pngtree-merry-christmas-2024-image_16452006.jpg",
                 imageWidth: 400,
                 imageHeight: 400,
