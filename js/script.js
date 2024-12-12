@@ -24,17 +24,28 @@ window.onload = function () {
                 imageHeight: 400,
                 background: "#ffe7d1",
                 color: "#d10000",
-                confirmButtonText: "🎁 Obrigado!"
+                confirmButtonText: "🎁 Obrigado!",
+                customClass: {
+                    popup: 'custom-swal-width'
+                }
             });
         };
 
         var targetElement = document.querySelector('#divListaLoja > div:nth-child(6)');
         if (targetElement) {
             targetElement.style.position = 'relative';
-            targetElement.appendChild(link);
+            targetElement.appendChild(link); 
         } else {
             console.error("O elemento '#divListaLoja > div:nth-child(6)' não foi encontrado.");
         }
     };
     document.head.appendChild(script);
+
+    var style = document.createElement("style");
+    style.textContent = `
+        .custom-swal-width {
+            max-width: 700px !important; /* Altere o valor para ajustar a largura */
+        }
+    `;
+    document.head.appendChild(style);
 };
