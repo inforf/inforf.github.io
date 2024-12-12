@@ -4,12 +4,15 @@ window.onload = function() {
     script.onload = function () {
         var button = document.createElement('button');
         button.innerText = 'Clique aqui';
-        button.classList.add('pedidoOperador', 'btn', 'btn-success', 'btn-block', 'js-shortcut-blank');
+        button.classList.add('pedidoOperador', 'btn', 'btn-success', 'js-shortcut-blank');
         button.style.fontSize = '16px';
         button.style.padding = '10px 20px';
         button.style.marginLeft = 'auto';
+        button.style.marginRight = '10px'; // Um pouco de espaço à direita
+        button.style.marginTop = '10px';   // Espaçamento no topo
         button.style.position = 'relative';
-        
+        button.style.width = 'auto';        // Evita que o botão ocupe toda a largura
+        button.style.display = 'inline-block'; // Torna o botão inline com os outros elementos
 
         button.onclick = function() {
             Swal.fire({
