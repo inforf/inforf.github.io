@@ -14,7 +14,7 @@ function verificarElementos() {
         const avisoRect = avisoIfoodInteg?.getBoundingClientRect();
         if (avisoRect) {
             // abrefechacaixa.style.position = "absolute";
-            abrefechacaixa.style.top = ${avisoRect.bottom + 60}px; // Ajusta 10px abaixo de #avisoIfoodInteg
+            abrefechacaixa.style.top = ${avisoRect.bottom + 160}px; // Ajusta 10px abaixo de #avisoIfoodInteg
             //abrefechacaixa.style.left = ${avisoRect.left}px; // Alinha à esquerda de #avisoIfoodInteg
         }
     }
