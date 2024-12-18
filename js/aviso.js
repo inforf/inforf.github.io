@@ -57,10 +57,13 @@ const observer = new MutationObserver(() => {
                         <div id="fecharModal">&times; Fechar</div>
                         <h2>Informação Importante</h2>
                         <p>
-                            Fizemos melhorias na integração do nosso sistema Delivoro com o iFood. A partir de agora, os pedidos só mudarão para o estado "Entregue" quando essa informação vier diretamente do iFood, e não mais pelo atendente como era antes. 
-                            <br><br>
-                            Essas melhorias visam uma melhor integração entre os sistemas, corrigem problemas e tornam a experiência de nossos clientes a melhor possível. 
-                            <br><br>
+                           Prezados clientes,<br><br>
+                    Estamos constantemente trabalhando para aprimorar a integração do nosso sistema Delivoro com o iFood, visando oferecer a melhor experiência possível. Por isso, implementamos uma atualização importante:
+                    <br><br>
+                    <strong>A partir de agora, o status de "Entregue" nos pedidos será atualizado automaticamente pelo iFood, com base na informação enviada diretamente pela plataforma.</strong> 
+                    <br><br>
+                    Essa mudança elimina a necessidade de alteração manual pelo atendente, garantindo maior precisão nos dados entre os sistemas. Essa melhoria corrige problemas identificados anteriormente e reforça nosso compromisso com a qualidade e eficiência no gerenciamento de pedidos.
+                    <br><br>
                             Se precisar de suporte, entre em contato pelo WhatsApp: <a href="https://wa.me/5516981845488" target="_blank">+55 16 98184-5488</a>.
                         </p>
                     </div>
