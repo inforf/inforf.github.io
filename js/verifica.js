@@ -15,7 +15,7 @@ function verificarElementos() {
         if (avisoRect) {
             abrefechacaixa.style.position = "absolute";
             abrefechacaixa.style.top = `${avisoRect.bottom + 10}px`; // Ajusta 10px abaixo de #avisoIfoodInteg
-            abrefechacaixa.style.left = `${avisoRect.left}px`; // Alinha à esquerda de #avisoIfoodInteg
+            //abrefechacaixa.style.left = `${avisoRect.left}px`; // Alinha à esquerda de #avisoIfoodInteg
         }
     }
 }
