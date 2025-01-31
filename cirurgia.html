@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contagem Regressiva</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Tempo restante até 06/02/2025:</h1>
+    <h1>Tempo restante até 06/02/2025 Cirurgia</h1>
     <h2 id="contador"></h2>
 
     <script>
         function atualizarContagem() {
-            const dataAlvo = new Date("2025-02-06T00:00:00").getTime();
+            const dataAlvo = new Date("2025-02-06T06:00:00").getTime();
             const agora = new Date().getTime();
             const diferenca = dataAlvo - agora;
 
