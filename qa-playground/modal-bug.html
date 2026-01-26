@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>QA Playground | Modal que não fecha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/modal-bug.css">
+  <script src="js/modal-bug.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <h1>Modal que não fecha</h1>
+  <p class="subtitle">
+    Este cenário demonstra um bug crítico onde um modal bloqueia completamente
+    a navegação da aplicação.
+  </p>
+</header>
+
+<main class="container">
+
+  <section class="controls">
+    <label class="toggle">
+      <input type="checkbox" id="toggleBug" checked>
+      Ativar bug (modal não fecha)
+    </label>
+
+    <button id="openModal" class="btn-primary">
+      Abrir modal
+    </button>
+  </section>
+
+  <section class="documentation">
+    <h2>Documentação do teste</h2>
+
+    <p><strong>Impacto:</strong> Usuário fica preso na tela, sem conseguir continuar a navegação.</p>
+    <p><strong>Tipo:</strong> Teste funcional / UX.</p>
+
+    <p><strong>Cenário:</strong></p>
+    <pre>
+Dado que o modal está aberto
+Quando o usuário tenta fechá-lo
+Então a ação falha e a navegação fica bloqueada
+    </pre>
+
+    <p>
+      <strong>Escape:</strong><br>
+      Para fins de teste, a tecla <strong>ESC</strong> fecha o modal e permite
+      que a navegação continue.
+    </p>
+
+    <hr>
+
+    <p><strong>Possível causa:</strong></p>
+    <ul>
+      <li>Evento de fechamento do modal não tratado corretamente.</li>
+      <li>Overlay bloqueando a interface sem alternativa de saída.</li>
+      <li>Falta de tratamento para acessibilidade e teclado.</li>
+    </ul>
+
+    <p><strong>Sugestão de correção (alto nível):</strong></p>
+    <ul>
+      <li>Garantir que o botão de fechar funcione corretamente.</li>
+      <li>Permitir fechamento via tecla ESC.</li>
+      <li>Evitar modais totalmente bloqueantes sem opção de saída.</li>
+    </ul>
+
+    <p class="note">
+      Observação: As sugestões acima têm caráter orientativo e não substituem
+      a decisão técnica do time de desenvolvimento.
+    </p>
+  </section>
+
+  <a href="index.html" class="back-link">← Voltar ao QA Playground</a>
+
+</main>
+
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+  <div class="modal-content">
+    <h3>Modal em estado incorreto</h3>
+    <p>Este modal não responde ao clique fora nem ao botão fechar.</p>
+    <button id="closeModal">Fechar</button>
+  </div>
+</div>
+
+</body>
+</html>
