@@ -142,3 +142,37 @@ h2 {
     height: 110px;
   }
 }
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+#backToTop:hover {
+  background: #1e40af;
+}
+
+#backToTop:focus {
+  outline: 2px solid #93c5fd;
+}
+
+.footer .privacy {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 6px;
+}
+
