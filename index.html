@@ -21,13 +21,10 @@
   </script>
 </head>
 
-<button
-  id="backToTop"
-  aria-label="Voltar ao topo"
-  title="Voltar ao topo"
->
-  ↑
-</button>
+<a href="#topo" id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+  ↑ Topo
+</a>
+
 
 
 <body>
@@ -48,11 +45,22 @@
         class="profile-pic"
       >
       <div class="hero-text">
-        <h1>Ronaldo Ferreira</h1>
-        <p data-i18n="hero_sub">
-          QA Sênior com mais de 7 anos de experiência em qualidade de software, automação, SQL, suporte técnico e operações.
-        </p>
-      </div>
+  <h1>Ronaldo Ferreira</h1>
+
+  <p data-i18n="hero_sub">
+    QA Sênior com mais de 7 anos de experiência em qualidade de software, automação, SQL, suporte técnico e operações.
+  </p>
+
+  <div class="hero-actions">
+    <p class="cv-link">
+  📄 <a href="docs/Ronaldo_Ferreira_QA_Senior.pdf" download>
+    Baixar currículo (PDF)
+  </a>
+</p>
+
+  </div>
+</div>
+
     </div>
 
     <nav class="actions" role="navigation" aria-label="Navegação principal">
@@ -113,26 +121,40 @@
   </section>
 
   <section id="contato" class="section dark" aria-labelledby="contact-title">
-    <div class="container">
-      <h2 id="contact-title" data-i18n="contact_title">Contato</h2>
+  <div class="container">
+    <h2 id="contact-title">Contato</h2>
 
-      <address>
-        <p>Email:
-          <a href="mailto:inforf@hotmail.com">inforf@hotmail.com</a>
-        </p>
-        <p>LinkedIn:
-          <a href="https://www.linkedin.com/in/ronaldo-ferreira-qa" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/ronaldo-ferreira-qa
-          </a>
-        </p>
-        <p>GitHub:
-          <a href="https://github.com/inforf" target="_blank" rel="noopener noreferrer">
-            github.com/inforf
-          </a>
-        </p>
-      </address>
-    </div>
-  </section>
+    <address class="contact-info">
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:inforf@hotmail.com">inforf@hotmail.com</a>
+      </p>
+
+      <p>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/ronaldo-ferreira-qa" target="_blank" rel="noopener noreferrer">
+          linkedin.com/in/ronaldo-ferreira-qa
+        </a>
+      </p>
+
+      <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/inforf" target="_blank" rel="noopener noreferrer">
+          github.com/inforf
+        </a>
+      </p>
+
+      <div class="cv-download">
+        <p class="cv-link">
+  📄 <a href="docs/Ronaldo_Ferreira_QA_Senior.pdf" download>Baixar currículo (PDF)
+  </a>
+</p>
+
+      </div>
+    </address>
+  </div>
+</section>
+
 
 </main>
 

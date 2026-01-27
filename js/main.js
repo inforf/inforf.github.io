@@ -60,16 +60,19 @@ const backToTopBtn = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
-    backToTopBtn.style.display = "flex";
+    backToTopBtn.classList.add("show");
   } else {
-    backToTopBtn.style.display = "none";
+    backToTopBtn.classList.remove("show");
   }
 });
 
-backToTopBtn.addEventListener("click", () => {
+backToTopBtn.addEventListener("click", (e) => {
+  e.preventDefault(); // evita jump seco do href
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
 });
+
+
 
