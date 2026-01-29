@@ -1,83 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>QA Playground | API lenta</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/api-lenta.css">
-  <script src="js/api-lenta.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>QA Playground | API lenta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/api-lenta.css" />
+    <script src="js/api-lenta.js" defer></script>
+    <script src="../js/global.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>API lenta / carregamento infinito</h1>
+      <p class="subtitle">
+        Este cenário demonstra um problema comum onde uma requisição demora
+        indefinidamente, deixando o usuário aguardando sem resposta.
+      </p>
+    </header>
 
-<header class="header">
-  <h1>API lenta / carregamento infinito</h1>
-  <p class="subtitle">
-    Este cenário demonstra um problema comum onde uma requisição demora
-    indefinidamente, deixando o usuário aguardando sem resposta.
-  </p>
-</header>
+    <main class="container">
+      <section class="controls">
+        <button id="loadData" class="btn-primary">Carregar dados</button>
 
-<main class="container">
+        <button id="cancelLoad" class="btn-secondary" disabled>
+          Cancelar carregamento
+        </button>
+      </section>
 
-  <section class="controls">
-    <button id="loadData" class="btn-primary">
-      Carregar dados
-    </button>
+      <section id="status" class="status hidden">
+        <div class="spinner"></div>
+        <p>Carregando dados da API…</p>
+      </section>
 
-    <button id="cancelLoad" class="btn-secondary" disabled>
-      Cancelar carregamento
-    </button>
-  </section>
+      <section class="documentation">
+        <h2>Documentação do teste</h2>
 
-  <section id="status" class="status hidden">
-    <div class="spinner"></div>
-    <p>Carregando dados da API…</p>
-  </section>
+        <p>
+          <strong>Impacto:</strong> Usuário fica aguardando sem saber se a ação
+          foi concluída.
+        </p>
+        <p><strong>Tipo:</strong> Teste funcional / UX / Integração.</p>
 
-  <section class="documentation">
-    <h2>Documentação do teste</h2>
-
-    <p><strong>Impacto:</strong> Usuário fica aguardando sem saber se a ação foi concluída.</p>
-    <p><strong>Tipo:</strong> Teste funcional / UX / Integração.</p>
-
-    <p><strong>Cenário:</strong></p>
-    <pre>
+        <p><strong>Cenário:</strong></p>
+        <pre>
 Dado que o usuário solicita dados da API
 Quando a API não responde
 Então o sistema permanece em carregamento infinito
-    </pre>
+    </pre
+        >
 
-    <p>
-      <strong>Escape:</strong><br>
-      Para fins de teste, o botão <strong>Cancelar carregamento</strong>
-      interrompe a espera e libera a navegação.
-    </p>
+        <p>
+          <strong>Escape:</strong><br />
+          Para fins de teste, o botão <strong>Cancelar carregamento</strong>
+          interrompe a espera e libera a navegação.
+        </p>
 
-    <hr>
+        <hr />
 
-    <p><strong>Possível causa:</strong></p>
-    <ul>
-      <li>Timeout da requisição não configurado.</li>
-      <li>API indisponível ou com alta latência.</li>
-      <li>Falta de tratamento para erro ou demora excessiva.</li>
-    </ul>
+        <p><strong>Possível causa:</strong></p>
+        <ul>
+          <li>Timeout da requisição não configurado.</li>
+          <li>API indisponível ou com alta latência.</li>
+          <li>Falta de tratamento para erro ou demora excessiva.</li>
+        </ul>
 
-    <p><strong>Sugestão de correção (alto nível):</strong></p>
-    <ul>
-      <li>Definir timeout máximo para requisições.</li>
-      <li>Exibir mensagem de erro ou tentativa novamente.</li>
-      <li>Evitar loaders infinitos sem feedback ao usuário.</li>
-    </ul>
+        <p><strong>Sugestão de correção (alto nível):</strong></p>
+        <ul>
+          <li>Definir timeout máximo para requisições.</li>
+          <li>Exibir mensagem de erro ou tentativa novamente.</li>
+          <li>Evitar loaders infinitos sem feedback ao usuário.</li>
+        </ul>
 
-    <p class="note">
-      Observação: As sugestões são orientativas e visam melhorar a experiência
-      do usuário, respeitando as decisões técnicas do time de desenvolvimento.
-    </p>
-  </section>
+        <p class="note">
+          Observação: As sugestões são orientativas e visam melhorar a
+          experiência do usuário, respeitando as decisões técnicas do time de
+          desenvolvimento.
+        </p>
+      </section>
 
-  <a href="index.html" class="back-link">← Voltar ao QA Playground</a>
-
-</main>
-
-</body>
+      <a href="index.html" class="back-link">← Voltar ao QA Playground</a>
+    </main>
+  </body>
 </html>

@@ -14,13 +14,16 @@ https://inforf.github.io/
 ## Conteúdo do portfólio
 
 ### 🔹 Página principal
+
 - Apresentação profissional
 - Experiência como QA Sênior
 - Competências técnicas
 - Contato e currículo em PDF
 
 ### 🔹 QA Playground
+
 Ambiente prático com cenários de falhas comuns em sistemas web, incluindo:
+
 - Modal que bloqueia a navegação
 - Problemas de UX e fluxo
 - Cenários pensados para testes manuais e automatizados
@@ -30,6 +33,7 @@ Ambiente prático com cenários de falhas comuns em sistemas web, incluindo:
 ---
 
 ## Automação de testes
+
 Os cenários do QA Playground são utilizados em testes automatizados com **Playwright**,
 disponíveis neste repositório:
 
@@ -38,6 +42,7 @@ disponíveis neste repositório:
 ---
 
 ## Tecnologias utilizadas
+
 - HTML5
 - CSS3
 - JavaScript
@@ -48,5 +53,6 @@ disponíveis neste repositório:
 ---
 
 ## Observação
+
 Este projeto tem finalidade **demonstrativa e educacional**, focada em
 qualidade de software, UX e boas práticas de QA.
