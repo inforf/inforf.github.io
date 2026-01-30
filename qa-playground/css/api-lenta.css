@@ -7,6 +7,8 @@ body {
   margin: 0;
   background: radial-gradient(circle at top, #0a1a3a, #000);
   color: #eaeaea;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
 }
 
 .header {
@@ -33,26 +35,21 @@ body {
   flex-wrap: wrap;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-secondary {
   padding: 10px 20px;
-  background: #2563eb;
-  color: #fff;
   border: none;
   border-radius: 6px;
+  color: #fff;
   cursor: pointer;
 }
 
-.btn-primary:hover {
-  background: #1d4ed8;
+.btn-primary {
+  background: #2563eb;
 }
 
 .btn-secondary {
-  padding: 10px 20px;
   background: #444;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
 }
 
 .btn-secondary:disabled {
@@ -80,11 +77,13 @@ body {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .documentation {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   padding: 20px;
   border-radius: 8px;
   margin-top: 30px;
@@ -97,19 +96,8 @@ pre {
   overflow-x: auto;
 }
 
-.note {
-  margin-top: 10px;
-  font-size: 14px;
-  opacity: 0.8;
-}
-
 .back-link {
   display: inline-block;
   margin-top: 30px;
   color: #7aa2ff;
-  text-decoration: none;
-}
-
-.back-link:hover {
-  text-decoration: underline;
 }

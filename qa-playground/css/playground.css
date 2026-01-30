@@ -1,48 +1,100 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #0b1020;
-  color: #fff;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.pg-header, .pg-footer {
-  background: #050914;
-  padding: 20px;
-  text-align: center;
+html,
+body {
+  height: 100%;
 }
 
-.pg-container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
-
-button {
-  padding: 10px;
-  cursor: pointer;
-}
-
-.modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.7);
+body {
+  background: radial-gradient(circle at top, #0a1a3a, #000);
+  color: #eaeaea;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.modal-content {
-  background: #111;
   padding: 20px;
-  border-radius: 6px;
 }
 
-.hidden {
-  display: none;
+.pg-wrapper {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(5, 10, 25, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
 }
 
-.qa-controls, .documentation {
-  background: #111;
-  padding: 15px;
-  margin-top: 20px;
+.pg-header {
+  padding: 32px 24px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pg-header h1 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.pg-header p {
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+.pg-container {
+  padding: 32px 24px;
+}
+
+.pg-container section {
+  margin-bottom: 28px;
+}
+
+.pg-container h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.pg-container p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.pg-container ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pg-container li {
+  margin: 8px 0;
+}
+
+.pg-container a {
+  color: #7aa2ff;
+  text-decoration: none;
+}
+
+.pg-container a:hover {
+  text-decoration: underline;
+}
+
+.pg-footer {
+  padding: 16px 24px;
+  text-align: center;
+  font-size: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 600px) {
+  .pg-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .pg-wrapper {
+    border-radius: 12px;
+  }
 }

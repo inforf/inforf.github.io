@@ -7,6 +7,8 @@ body {
   margin: 0;
   background: radial-gradient(circle at top, #0a1a3a, #000);
   color: #eaeaea;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
 }
 
 .header {
@@ -34,10 +36,6 @@ body {
   flex-wrap: wrap;
 }
 
-.toggle {
-  font-size: 16px;
-}
-
 .btn-primary {
   padding: 10px 20px;
   background: #2563eb;
@@ -47,19 +45,11 @@ body {
   cursor: pointer;
 }
 
-.btn-primary:hover {
-  background: #1d4ed8;
-}
-
 .documentation {
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   padding: 20px;
   border-radius: 8px;
   margin-top: 30px;
-}
-
-.documentation h2 {
-  margin-top: 0;
 }
 
 pre {
@@ -73,20 +63,16 @@ pre {
   display: inline-block;
   margin-top: 30px;
   color: #7aa2ff;
-  text-decoration: none;
-}
-
-.back-link:hover {
-  text-decoration: underline;
 }
 
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 16px;
   z-index: 1000;
 }
 
@@ -98,21 +84,7 @@ pre {
   background: #111;
   padding: 25px;
   border-radius: 10px;
-  width: 90%;
+  width: 100%;
   max-width: 400px;
   text-align: center;
-}
-
-.modal-content button {
-  margin-top: 15px;
-  padding: 8px 16px;
-  background: #444;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.modal-content button:hover {
-  background: #666;
 }
