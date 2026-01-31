@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>QA Playground | Formulário com defeito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/formulario-bug.css" />
+    <script src="js/formulario-bug.js" defer></script>
+    <script src="../js/global.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Formulário com validação incorreta</h1>
+      <p class="subtitle">
+        Este cenário demonstra um formulário que permite envio de dados
+        inválidos sem feedback adequado ao usuário.
+      </p>
+    </header>
+
+    <main class="container">
+      <section class="form-area">
+        <form id="bugForm">
+          <label>
+            Email
+            <input type="text" id="email" placeholder="ex: usuario@email.com" />
+          </label>
+
+          <label>
+            Idade
+            <input type="number" id="age" placeholder="ex: 30" />
+          </label>
+
+          <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+
+        <p id="success" class="success hidden">Dados enviados com sucesso.</p>
+      </section>
+
+      <section class="documentation">
+        <h2>Documentação do teste</h2>
+
+        <p><strong>Impacto:</strong> Dados inválidos entram no sistema.</p>
+        <p><strong>Tipo:</strong> Teste funcional / Validação / UX.</p>
+
+        <p><strong>Cenário:</strong></p>
+        <pre>
+Dado que o usuário preenche o formulário
+Quando informa dados inválidos
+Então o sistema aceita o envio sem alertar erro
+        </pre>
+
+        <p><strong>Possível causa:</strong></p>
+        <ul>
+          <li>Validação apenas no backend.</li>
+          <li>Falta de regras no frontend.</li>
+          <li>Ausência de feedback visual.</li>
+        </ul>
+
+        <p><strong>Sugestão de correção:</strong></p>
+        <ul>
+          <li>Validar formato de email.</li>
+          <li>Bloquear envio com campos inválidos.</li>
+          <li>Exibir mensagens claras ao usuário.</li>
+        </ul>
+      </section>
+
+      <a href="index.html" class="back-link">← Voltar ao QA Playground</a>
+    </main>
+  </body>
+</html>
