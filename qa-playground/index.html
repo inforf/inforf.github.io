@@ -1,26 +1,27 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>QA Playground | Ronaldo Ferreira</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QA Playground</title>
     <link rel="stylesheet" href="css/playground.css" />
-    <script src="../js/global.js"></script>
   </head>
-
   <body>
-    <div class="pg-wrapper">
-      <header class="pg-header">
+    <main class="container">
+      <section class="card">
         <h1>QA Playground</h1>
-        <p>Ambiente controlado de testes com bugs intencionais</p>
-      </header>
+        <p class="subtitle">
+          Ambiente controlado de testes com bugs intencionais
+        </p>
 
-      <main class="pg-container">
+        <hr />
+
         <section>
           <h2>Objetivo</h2>
           <p>
             Este playground demonstra cenários reais de falhas em aplicações
-            web, com foco em análise, impacto, documentação e estratégia de QA.
+            web, com foco em análise de impacto, documentação clara e tomada de
+            decisão em QA.
           </p>
         </section>
 
@@ -28,23 +29,45 @@
           <h2>Cenários</h2>
           <ul>
             <li>
-              <a href="modal-bug.html">Cenário 1 — Modal que não fecha</a>
+              <a href="modal-bug.html"> Cenário 1 — Modal que não fecha </a>
             </li>
             <li>
-              <a href="api-lenta.html">Cenário 2 — API lenta</a>
+              <a href="api-lenta.html"> Cenário 2 — API lenta </a>
             </li>
             <li>
-              <a href="formulario-bug.html"
-                >Cenário 3 — Formulário com validação incorreta</a
-              >
+              <a href="formulario-bug.html">
+                Cenário 3 — Formulário com validação incorreta
+              </a>
             </li>
           </ul>
         </section>
-      </main>
 
-      <footer class="pg-footer">
-        <a href="../index.html">← Voltar ao site principal</a>
-      </footer>
-    </div>
+        <section class="pg-repo">
+          <h2>Automação e Relatório</h2>
+          <p>
+            Os cenários acima são cobertos por testes automatizados utilizando
+            Playwright, executados sem interrupção mesmo diante de falhas, com
+            coleta automática de evidências e geração de relatório técnico
+            focado em impacto e risco para o negócio.
+          </p>
+          <p>
+            🔗
+            <a
+              href="https://github.com/inforf/qa-playground-automation"
+              target="_blank"
+              rel="noopener"
+            >
+              Repositório de automação (Playwright + IA local)
+            </a>
+          </p>
+        </section>
+
+        <hr />
+
+        <p class="back-link">
+          <a href="../index.html">← Voltar ao site principal</a>
+        </p>
+      </section>
+    </main>
   </body>
 </html>

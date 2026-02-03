@@ -30,6 +30,7 @@ body {
   overflow: hidden;
 }
 
+
 .pg-header {
   padding: 32px 24px;
   text-align: center;
@@ -45,6 +46,7 @@ body {
   font-size: 0.95rem;
   opacity: 0.8;
 }
+
 
 .pg-container {
   padding: 32px 24px;
@@ -62,7 +64,9 @@ body {
 .pg-container p {
   font-size: 0.95rem;
   opacity: 0.9;
+  max-width: 720px;
 }
+
 
 .pg-container ul {
   list-style: none;
@@ -73,6 +77,7 @@ body {
   margin: 8px 0;
 }
 
+
 .pg-container a {
   color: #7aa2ff;
   text-decoration: none;
@@ -82,12 +87,37 @@ body {
   text-decoration: underline;
 }
 
+
+.pg-repo {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pg-repo h2 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+
+.pg-repo p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.pg-repo a {
+  font-weight: 500;
+  color: #9db4ff;
+}
+
+
 .pg-footer {
   padding: 16px 24px;
   text-align: center;
   font-size: 13px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
+
 
 @media (max-width: 600px) {
   .pg-header h1 {
@@ -96,5 +126,9 @@ body {
 
   .pg-wrapper {
     border-radius: 12px;
+  }
+
+  .pg-container {
+    padding: 24px 16px;
   }
 }
