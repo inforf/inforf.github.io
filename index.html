@@ -4,33 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Ronaldo Ferreira | QA</title>
+    <title>Ronaldo Ferreira | Quality Assurance</title>
 
     <meta
       name="description"
-      content="Ronaldo Ferreira - QA com mais de 7 anos de experiência em qualidade de software, automação, SQL e análise de sistemas."
+      content="Ronaldo Ferreira - Quality Assurance com mais de 7 anos atuando em produção, testes funcionais, automação com Playwright, testes de API e análise de risco."
+    />
+
+    <meta property="og:title" content="Ronaldo Ferreira | Quality Assurance" />
+    <meta
+      property="og:description"
+      content="QA com experiência em ambiente real de produção, validação funcional, automação com Playwright, testes de API e SQL."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://inforf.github.io/" />
+    <meta
+      property="og:image"
+      content="https://inforf.github.io/img/profile.jpg"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ronaldo Ferreira | Quality Assurance" />
+    <meta
+      name="twitter:description"
+      content="QA com experiência em produção, automação com Playwright e testes de API."
+    />
+    <meta
+      name="twitter:image"
+      content="https://inforf.github.io/img/profile.jpg"
     />
 
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js" defer></script>
-    <script src="js/global.js"></script>
+    <script src="js/global.js" defer></script>
+
+    <script type="text/javascript">
+      (function (c, l, a, r, i, t, y) {
+        c[a] =
+          c[a] ||
+          function () {
+            (c[a].q = c[a].q || []).push(arguments);
+          };
+        t = l.createElement(r);
+        t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", "SEU_ID_DO_CLARITY");
+    </script>
   </head>
 
-  <a
-    href="#topo"
-    id="backToTop"
-    class="back-to-top"
-    aria-label="Voltar ao topo"
-  >
-    ↑ Topo
-  </a>
-
   <body>
-    <header class="hero" role="banner">
+    <a href="#topo" id="backToTop" class="back-to-top">↑ Topo</a>
+
+    <header class="hero" role="banner" id="topo">
       <div class="topbar">
-        <div class="lang-switch" role="group" aria-label="Seleção de idioma">
-          <button data-lang="pt" aria-label="Idioma Português">PT</button>
-          <button data-lang="en" aria-label="Language English">EN</button>
+        <div class="lang-switch" role="group">
+          <button data-lang="pt">PT</button>
+          <button data-lang="en">EN</button>
         </div>
       </div>
 
@@ -41,26 +72,26 @@
             alt="Foto de perfil de Ronaldo Ferreira"
             class="profile-pic"
           />
+
           <div class="hero-text">
             <h1>Ronaldo Ferreira</h1>
 
             <p data-i18n="hero_sub">
-              QA com mais de 7 anos de experiência em qualidade de software,
-              automação, SQL, suporte técnico e operações.
+              Quality Assurance com experiência em qualidade de software,
+              automação com Playwright, testes de API, SQL e análise de risco em
+              ambiente de produção.
             </p>
 
             <div class="hero-actions">
               <p class="cv-link">
                 📄
-                <a href="docs/curriculo.pdf" download>
-                  Baixar currículo (PDF)
-                </a>
+                <a href="docs/curriculo.pdf" download>Baixar currículo (PDF)</a>
               </p>
             </div>
           </div>
         </div>
 
-        <nav class="actions" role="navigation" aria-label="Navegação principal">
+        <nav class="actions" role="navigation">
           <a href="#sobre" class="btn" data-i18n="nav_about">Sobre</a>
           <a href="#skills" class="btn" data-i18n="nav_skills">Skills</a>
           <a href="#experiencia" class="btn" data-i18n="nav_exp">Experiência</a>
@@ -70,66 +101,53 @@
       </div>
     </header>
 
-    <main role="main">
-      <section id="sobre" class="section" aria-labelledby="about-title">
+    <main>
+      <section id="sobre" class="section">
         <div class="container">
-          <h2 id="about-title" data-i18n="about_title">Sobre mim</h2>
+          <h2 data-i18n="about_title">Sobre mim</h2>
           <p data-i18n="about_text">
-            Atuei por mais de 7 anos na Delivoro trabalhando com QA, suporte
-            técnico avançado e análise de sistemas. Meu foco sempre foi garantir
-            qualidade, estabilidade e boa experiência para o cliente.
-            Investiguei bugs em aplicações Java, apoiei correções, criei
-            consultas SQL em MySQL, validei integrações, participei como PO em
-            projetos e desenvolvi ferramentas em HTML, CSS e JavaScript para
-            apoiar o time de qualidade.
+            Atuo há mais de 7 anos em sistemas web em produção trabalhando com
+            validação funcional, investigação de falhas, validação de
+            integrações, consultas SQL e apoio à decisão de release. Também
+            desenvolvo automações de testes e ferramentas internas para apoiar
+            estabilidade e qualidade do sistema.
           </p>
         </div>
       </section>
 
-      <section id="skills" class="section dark" aria-labelledby="skills-title">
+      <section id="skills" class="section dark">
         <div class="container">
-          <h2 id="skills-title" data-i18n="skills_title">Competências</h2>
+          <h2 data-i18n="skills_title">Competências</h2>
 
-          <div class="grid" role="list">
-            <div class="card" role="listitem">
-              Testes Funcionais e Exploratórios
-            </div>
-            <div class="card" role="listitem">
-              Automação com Selenium e Playwright
-            </div>
-            <div class="card" role="listitem">Testes de API e validações</div>
-            <div class="card" role="listitem">SQL avançado (MySQL)</div>
-            <div class="card" role="listitem">AWS (EC2, ELB, RDS, S3)</div>
-            <div class="card" role="listitem">
-              Implantação, treinamento e UX
-            </div>
+          <div class="grid">
+            <div class="card">Testes Funcionais e Exploratórios</div>
+            <div class="card">Automação com Playwright</div>
+            <div class="card">Testes de API</div>
+            <div class="card">SQL (MySQL)</div>
+            <div class="card">Investigação de Incidentes</div>
+            <div class="card">Ambiente de Produção</div>
           </div>
         </div>
       </section>
 
-      <section id="experiencia" class="section" aria-labelledby="exp-title">
+      <section id="experiencia" class="section">
         <div class="container">
-          <h2 id="exp-title" data-i18n="exp_title">Experiência Profissional</h2>
+          <h2 data-i18n="exp_title">Experiência Profissional</h2>
 
           <article class="card">
             <h3>Delivoro</h3>
             <p data-i18n="exp_text">
-              Atuei com suporte ao cliente e ao time interno, análise de bugs,
-              documentação técnica, apoio ao desenvolvimento em Java, criação de
-              relatórios SQL, testes em ambiente de QA, automação com Selenium,
-              levantamento de requisitos como PO, atuação em UX, implantação do
-              sistema, treinamentos e monitoramento de infraestrutura AWS com
-              deploy, rollback e ajustes de instâncias.
+              Atuação em QA em ambiente real de produção, validando fluxos
+              críticos, integrações e releases. Investigação de bugs, criação de
+              consultas SQL, testes funcionais, apoio ao desenvolvimento,
+              validação de requisitos, suporte técnico avançado e acompanhamento
+              de implantações.
             </p>
           </article>
         </div>
       </section>
 
-      <section
-        id="contato"
-        class="section dark"
-        aria-labelledby="contact-title"
-      >
+      <section id="contato" class="section dark">
         <div class="container">
           <h2 id="contact-title">Contato</h2>
 
@@ -144,7 +162,6 @@
               <a
                 href="https://www.linkedin.com/in/ronaldo-ferreira-qa"
                 target="_blank"
-                rel="noopener noreferrer"
               >
                 linkedin.com/in/ronaldo-ferreira-qa
               </a>
@@ -152,11 +169,7 @@
 
             <p>
               <strong>GitHub:</strong>
-              <a
-                href="https://github.com/inforf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://github.com/inforf" target="_blank">
                 github.com/inforf
               </a>
             </p>
@@ -164,9 +177,7 @@
             <div class="cv-download">
               <p class="cv-link">
                 📄
-                <a href="docs/curriculo.pdf" download
-                  >Baixar currículo (PDF)
-                </a>
+                <a href="docs/curriculo.pdf" download>Baixar currículo (PDF)</a>
               </p>
             </div>
           </address>
@@ -175,15 +186,11 @@
     </main>
 
     <footer class="footer" role="contentinfo">
-      <p>© 2026 - Ronaldo Ferreira | QA</p>
+      <p>© 2026 - Ronaldo Ferreira</p>
       <p class="privacy">
         Este site utiliza
-        <a
-          href="https://clarity.microsoft.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Microsoft Clarity</a
+        <a href="https://clarity.microsoft.com" target="_blank"
+          >Microsoft Clarity</a
         >
         para análise de navegação e melhoria da experiência do usuário.
       </p>
