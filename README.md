@@ -1,58 +1,85 @@
-# Ronaldo Ferreira – QA Sênior
+# Ronaldo Ferreira – QA Automation / Quality Assurance
 
-Este repositório contém meu **portfólio profissional** como QA Sênior, com foco em
-qualidade de software, testes, análise de impacto e experiência do usuário.
+Este repositório contém meu portfólio profissional em Qualidade de Software,
+com foco em análise de falhas, testes, automação e impacto no negócio.
 
-O site é publicado via **GitHub Pages** e inclui um **QA Playground** com cenários
-reais de falhas, utilizados para demonstrar raciocínio de QA, documentação e testes.
+O site é publicado via GitHub Pages e inclui um QA Playground com cenários
+reais de falhas, criados para demonstrar investigação, documentação e
+estratégia de testes.
 
-🌐 **Acesse o portfólio:**  
+🌐 Acesse o portfólio:
 https://inforf.github.io/
 
 ---
 
-## Conteúdo do portfólio
+## O que este portfólio demonstra
 
-### 🔹 Página principal
+Mais do que validar se "passou ou falhou", o objetivo do projeto é mostrar
+como um QA analisa risco, comportamento do usuário e impacto no sistema.
 
-- Apresentação profissional
-- Experiência como QA Sênior
-- Competências técnicas
-- Contato e currículo em PDF
+O projeto simula situações comuns de produção, como:
 
-### 🔹 QA Playground
+• Problemas de UX que bloqueiam fluxo do usuário  
+• Respostas lentas de API  
+• Comportamentos inconsistentes de interface  
+• Cenários pensados para investigação de bugs
 
-Ambiente prático com cenários de falhas comuns em sistemas web, incluindo:
-
-- Modal que bloqueia a navegação
-- Problemas de UX e fluxo
-- Cenários pensados para testes manuais e automatizados
-
-👉 O objetivo não é “corrigir” os bugs, mas **demonstrar análise, impacto e estratégia de testes**.
+O foco é o raciocínio de QA: identificar, reproduzir, avaliar impacto e
+documentar corretamente.
 
 ---
 
-## Automação de testes
+## QA Playground
 
-Os cenários do QA Playground são utilizados em testes automatizados com **Playwright**,
-disponíveis neste repositório:
+O QA Playground é um ambiente propositalmente defeituoso.
 
-🔗 https://github.com/inforf/qa-playground-playwright
+Ele não existe para ser corrigido — existe para ser testado.
+
+Cada cenário permite:
+
+• Exploração manual
+• Escrita de cenários de teste
+• Investigação de causa
+• Automação E2E
+• Análise de impacto no negócio
 
 ---
 
-## Tecnologias utilizadas
+## Automação de Testes
+
+Os cenários do Playground são utilizados em testes automatizados com Playwright:
+
+https://github.com/inforf/qa-automation-portfolio
+
+Os testes incluem:
+
+• Testes E2E
+• Testes de API
+• Page Object Model
+• Execução em CI com GitHub Actions
+
+---
+
+## Tecnologias
 
 - HTML5
 - CSS3
 - JavaScript
+- Playwright
+- GitHub Actions (CI)
 - GitHub Pages
-- Microsoft Clarity (análise de navegação)
-- Playwright (automação de testes)
+- Microsoft Clarity (análise de comportamento do usuário)
 
 ---
 
-## Observação
+## Objetivo do projeto
 
-Este projeto tem finalidade **demonstrativa e educacional**, focada em
-qualidade de software, UX e boas práticas de QA.
+Este projeto é demonstrativo.
+
+A ideia não é provar que sei usar ferramenta, e sim mostrar capacidade de:
+
+• investigação de problemas
+• pensamento crítico
+• análise de risco
+• documentação técnica
+• comunicação entre negócio e desenvolvimento
