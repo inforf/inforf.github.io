@@ -47,16 +47,24 @@ Cada cenário permite:
 
 ## Automação de Testes
 
-Os cenários do Playground são utilizados em testes automatizados com Playwright:
+Os cenários do Playground são utilizados em testes automatizados com Playwright: https://github.com/inforf/qa-playground-automation  
 
-https://github.com/inforf/qa-automation-portfolio
+O foco não é testar o código, e sim validar o comportamento esperado do sistema.
 
-Os testes incluem:
+Cobertura:
 
-• Testes E2E
-• Testes de API
-• Page Object Model
-• Execução em CI com GitHub Actions
+- fluxo principal  
+- validações de formulário  
+- estados inválidos  
+- mensagens ao usuário  
+- consistência de interface  
+
+Após cada execução é possível identificar:
+
+- impacto no usuário
+- severidade
+- frequência
+- necessidade de bloqueio de release)
 
 ---
 
@@ -66,7 +74,6 @@ Os testes incluem:
 - CSS3
 - JavaScript
 - Playwright
-- GitHub Actions (CI)
 - GitHub Pages
 - Microsoft Clarity (análise de comportamento do usuário)
 
