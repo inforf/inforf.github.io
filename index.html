@@ -1,209 +1,68 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Ronaldo Ferreira | QA</title>
-
-    <meta
-      name="description"
-      content="Portfólio de Quality Assurance com cenários reais de falhas, testes exploratórios, automação E2E com Playwright, testes de API e análise de risco em aplicações web."
-    />
-
-    <meta property="og:title" content="Ronaldo Ferreira | QA" />
-    <meta
-      property="og:description"
-      content="Portfólio de QA com cenários reais de falhas, automação E2E com Playwright, testes de API e análise de risco."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://inforf.github.io/" />
-    <meta
-      property="og:image"
-      content="https://inforf.github.io/img/profile.jpg"
-    />
-
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js" defer></script>
-    <script src="js/global.js"></script>
-  </head>
-
-  <body>
-    <a href="#topo" id="backToTop" class="back-to-top">↑ Topo</a>
-
-    <header class="hero" role="banner">
-      <div class="topbar">
-        <div class="lang-switch">
-          <button data-lang="pt">PT</button>
-          <button data-lang="en">EN</button>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ronaldo Ferreira | Quality Assurance</title>
+  <meta name="description" content="Portfólio de Ronaldo Ferreira, Quality Assurance com foco em risco, testes exploratórios, automação com Playwright, API, SQL e CI/CD." />
+  <meta property="og:title" content="Ronaldo Ferreira | Quality Assurance" />
+  <meta property="og:description" content="QA focado em risco, comportamento do usuário, automação e prevenção de falhas em produção." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://inforf.github.io/" />
+  <meta property="og:image" content="https://inforf.github.io/img/profile.jpg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+  <script src="js/global.js"></script>
+</head>
+<body id="topo">
+  <a href="#conteudo" class="skip-link">Ir para o conteúdo</a>
+  <a href="#topo" id="backToTop" class="back-to-top" aria-label="Voltar ao topo">↑</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#topo" aria-label="Ronaldo Ferreira - início">RF<span>.</span></a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#sobre" data-i18n="nav_about">Sobre</a><a href="#projetos" data-i18n="nav_projects">Projetos</a><a href="#experiencia" data-i18n="nav_exp">Experiência</a><a href="#stack" data-i18n="nav_stack">Stack</a><a href="#contato" data-i18n="nav_contact">Contato</a>
+      </nav>
+      <div class="lang-switch" aria-label="Idioma"><button type="button" data-lang="pt">PT</button><button type="button" data-lang="en">EN</button></div>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="hero"><div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow" data-i18n="hero_kicker">QUALITY ASSURANCE • AUTOMAÇÃO • RISCO</span>
+        <h1><span data-i18n="hero_line1">Qualidade não é apenas</span><strong data-i18n="hero_line2">encontrar bugs.</strong></h1>
+        <p class="hero-lead" data-i18n="hero_lead">É entender o risco, proteger a experiência do usuário e impedir que problemas previsíveis cheguem à produção.</p>
+        <p class="hero-sub" data-i18n="hero_sub">Sou Ronaldo Ferreira, QA com mais de 7 anos de experiência em qualidade de software, investigação de falhas, SQL, suporte técnico e operações.</p>
+        <div class="hero-actions"><a class="btn primary" href="#projetos" data-i18n="hero_cta_projects">Ver projetos</a><a class="btn secondary" href="docs/curriculo.pdf" download data-i18n="hero_cta_cv">Baixar currículo</a></div>
+        <div class="hero-links"><a href="https://github.com/inforf" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/ronaldo-ferreira-qa" target="_blank" rel="noopener">LinkedIn ↗</a></div>
       </div>
-
-      <div class="container">
-        <div class="hero-profile">
-          <img
-            src="img/profile.jpg"
-            alt="Ronaldo Ferreira"
-            class="profile-pic"
-          />
-
-          <div class="hero-text">
-            <h1>Ronaldo Ferreira</h1>
-
-            <p data-i18n="hero_sub">
-              QA com mais de 7 anos de experiência em qualidade de software,
-              automação, SQL, suporte técnico e operações.
-            </p>
-
-            <div class="hero-actions">
-              <p class="cv-link">
-                📄
-                <a href="docs/curriculo.pdf" download>Baixar currículo (PDF)</a>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <nav class="actions">
-          <a href="#sobre" class="btn" data-i18n="nav_about">Sobre</a>
-          <a href="#skills" class="btn" data-i18n="nav_skills">Skills</a>
-          <a href="#experiencia" class="btn" data-i18n="nav_exp">Experiência</a>
-          <a href="#automation" class="btn">Automação</a>
-          <a href="/qa-playground/index.html" class="btn">QA Playground</a>
-          <a href="#contato" class="btn" data-i18n="nav_contact">Contato</a>
-        </nav>
+      <div class="hero-profile-card">
+        <img src="img/profile.jpg" alt="Ronaldo Ferreira" class="profile-pic" />
+        <div><strong>Ronaldo Ferreira</strong><span data-i18n="profile_role">Quality Assurance</span></div>
+        <div class="signal-list"><span><b>01</b><span data-i18n="signal1">Observar comportamento</span></span><span><b>02</b><span data-i18n="signal2">Reproduzir e medir risco</span></span><span><b>03</b><span data-i18n="signal3">Automatizar regressões</span></span><span><b>04</b><span data-i18n="signal4">Apoiar decisão de release</span></span></div>
       </div>
-    </header>
-
-    <main>
-      <section id="sobre" class="section">
-        <div class="container">
-          <h2 data-i18n="about_title">Sobre mim</h2>
-
-          <p data-i18n="about_text">
-            Atuo há mais de 7 anos na Delivoro trabalhando com QA, suporte
-            técnico avançado e análise de sistemas. Investiguei bugs em
-            aplicações Java, validei integrações, criei consultas SQL em MySQL e
-            apoiei correções junto ao time de desenvolvimento. Também participei
-            de implantações, treinamentos e validações em produção, sempre
-            focado em estabilidade e experiência do usuário.
-          </p>
-        </div>
-      </section>
-
-      <section id="skills" class="section dark">
-        <div class="container">
-          <h2 data-i18n="skills_title">Competências</h2>
-
-          <div class="grid">
-            <div class="card" data-i18n="skill1">
-              Testes Funcionais e Exploratórios
-            </div>
-            <div class="card" data-i18n="skill2">
-              Automação com Selenium e Playwright
-            </div>
-            <div class="card" data-i18n="skill3">
-              Testes de API e validações
-            </div>
-            <div class="card" data-i18n="skill4">SQL avançado (MySQL)</div>
-            <div class="card" data-i18n="skill5">AWS (EC2, ELB, RDS, S3)</div>
-            <div class="card" data-i18n="skill6">
-              Implantação, treinamento e UX
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="experiencia" class="section">
-        <div class="container">
-          <h2 data-i18n="exp_title">Experiência Profissional</h2>
-
-          <article class="card">
-            <h3>Delivoro</h3>
-            <p data-i18n="exp_text">
-              Atuação em QA em ambiente real de produção: análise de bugs,
-              validação funcional, testes exploratórios, documentação técnica,
-              apoio ao desenvolvimento, criação de relatórios SQL, levantamento
-              de requisitos, treinamentos e acompanhamento de deploy e rollback
-              em infraestrutura AWS.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="automation" class="section">
-        <div class="container">
-          <h2 data-i18n="automation_title">Automação de Testes e CI</h2>
-
-          <article class="card">
-            <h3>QA Automation Portfolio (Playwright + GitHub Actions)</h3>
-
-            <p data-i18n="automation_desc">
-              Projeto de automação E2E e testes de API utilizando Playwright com
-              execução contínua em pipeline CI.
-            </p>
-
-            <ul style="margin-top: 15px; line-height: 1.7">
-              <li>Testes end-to-end de interface</li>
-              <li>Testes de API</li>
-              <li>Page Object Model</li>
-              <li>Execução automática via GitHub Actions</li>
-              <li>Relatório automático de execução</li>
-            </ul>
-
-            <p style="margin-top: 18px">
-              🔗
-              <a
-                href="https://github.com/inforf/qa-automation-portfolio"
-                target="_blank"
-                data-i18n="automation_repo"
-              >
-                Ver repositório de automação
-              </a>
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contato" class="section dark">
-        <div class="container">
-          <h2 data-i18n="contact_title">Contato</h2>
-
-          <p>
-            <strong>Email:</strong>
-            <a href="mailto:inforf@hotmail.com">inforf@hotmail.com</a>
-          </p>
-          <p>
-            <strong>LinkedIn:</strong>
-            <a
-              href="https://www.linkedin.com/in/ronaldo-ferreira-qa"
-              target="_blank"
-              >linkedin.com/in/ronaldo-ferreira-qa</a
-            >
-          </p>
-          <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/inforf" target="_blank"
-              >github.com/inforf</a
-            >
-          </p>
-
-          <p class="cv-link">
-            📄 <a href="docs/curriculo.pdf" download>Baixar currículo (PDF)</a>
-          </p>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>© 2026 - Ronaldo Ferreira | QA</p>
-      <p class="privacy">
-        Este site utiliza
-        <a href="https://clarity.microsoft.com" target="_blank"
-          >Microsoft Clarity</a
-        >
-        para análise de navegação e melhoria da experiência do usuário.
-      </p>
-    </footer>
-  </body>
-</html>
+    </div></section>
+    <section id="sobre" class="section"><div class="container split">
+      <div><span class="section-label" data-i18n="about_label">COMO EU PENSO QA</span><h2 data-i18n="about_title">O sistema pode funcionar tecnicamente e ainda estar errado para o usuário.</h2></div>
+      <div class="prose"><p data-i18n="about_p1">Minha experiência combina QA, suporte técnico avançado e análise de sistemas. Isso me ensinou a olhar além do “passou ou falhou”: procuro entender contexto, frequência, impacto e risco para o negócio e para quem usa o produto.</p><p data-i18n="about_p2">Ao longo da minha atuação investiguei bugs em aplicações Java, validei integrações, criei consultas SQL em MySQL, apoiei correções com desenvolvimento e acompanhei implantações, validações em produção, deploy e rollback em AWS.</p></div>
+    </div></section>
+    <section id="projetos" class="section section-dark"><div class="container">
+      <div class="section-head"><div><span class="section-label" data-i18n="projects_label">LABORATÓRIO DE QA</span><h2 data-i18n="projects_title">Projetos que mostram como eu raciocino diante de um sistema.</h2></div><p data-i18n="projects_intro">Em vez de apenas listar ferramentas, estes projetos demonstram investigação, automação, evidências e prevenção.</p></div>
+      <div class="project-grid">
+        <article class="project-card featured"><div class="project-number">01</div><span class="project-tag">TESTE EXPLORATÓRIO • RISCO</span><h3>QA Playground</h3><p data-i18n="project1_desc">Ambiente propositalmente defeituoso criado para exercitar investigação de bugs, análise de impacto, cenários de teste e raciocínio de QA.</p><ul><li data-i18n="project1_li1">Falhas funcionais e de UX</li><li data-i18n="project1_li2">Comportamentos inconsistentes</li><li data-i18n="project1_li3">Cenários pensados para reprodução e evidência</li></ul><a class="project-link" href="/qa-playground/index.html" data-i18n="project1_cta">Abrir QA Playground →</a></article>
+        <article class="project-card"><div class="project-number">02</div><span class="project-tag">PLAYWRIGHT • API • E2E</span><h3>QA Playground Automation</h3><p data-i18n="project2_desc">Automação dos cenários do Playground para transformar comportamentos observados em testes reproduzíveis e reduzir regressões.</p><ul><li>Playwright</li><li data-i18n="project2_li2">Validação de fluxos e estados inválidos</li><li data-i18n="project2_li3">Evidências de execução</li></ul><a class="project-link" href="https://github.com/inforf/qa-playground-automation" target="_blank" rel="noopener" data-i18n="project2_cta">Ver repositório →</a></article>
+        <article class="project-card"><div class="project-number">03</div><span class="project-tag">CI/CD • QUALITY GATE</span><h3>QA Automation Portfolio</h3><p data-i18n="project3_desc">Projeto de automação E2E e API integrado ao GitHub Actions, levando a validação para o pipeline e apoiando decisões antes do release.</p><ul><li>Playwright + API</li><li>Page Object Model</li><li>GitHub Actions</li></ul><a class="project-link" href="https://github.com/inforf/qa-automation-portfolio" target="_blank" rel="noopener" data-i18n="project3_cta">Ver repositório →</a></article>
+      </div>
+    </div></section>
+    <section id="experiencia" class="section"><div class="container"><span class="section-label" data-i18n="exp_label">EXPERIÊNCIA REAL</span><div class="experience-card">
+      <div class="experience-meta"><h2>Delivoro</h2><span data-i18n="exp_years">+7 anos</span></div>
+      <div class="experience-body"><h3 data-i18n="exp_title">QA, suporte técnico avançado e análise de sistemas</h3><p data-i18n="exp_text">Atuação em ambiente real de produção com análise de bugs, validação funcional, testes exploratórios, documentação técnica, apoio ao desenvolvimento, consultas e relatórios SQL, levantamento de requisitos, treinamentos e acompanhamento de deploy e rollback em infraestrutura AWS.</p><div class="chips"><span>Testes exploratórios</span><span>SQL / MySQL</span><span>Java</span><span>Integrações</span><span>AWS</span><span>Deploy / Rollback</span><span>UX</span><span>Suporte técnico</span></div></div>
+    </div></div></section>
+    <section id="stack" class="section section-dark"><div class="container"><div class="section-head"><div><span class="section-label" data-i18n="stack_label">FERRAMENTAS COMO MEIO, NÃO COMO FIM</span><h2 data-i18n="stack_title">Stack e competências</h2></div></div><div class="stack-grid">
+      <div class="stack-group"><h3 data-i18n="stack_testing">Testes</h3><p>Funcionais • Exploratórios • E2E • API • Regressão</p></div><div class="stack-group"><h3 data-i18n="stack_automation">Automação</h3><p>Playwright • Selenium • Page Object Model</p></div><div class="stack-group"><h3 data-i18n="stack_data">Dados</h3><p>SQL • MySQL • Análise e validação de dados</p></div><div class="stack-group"><h3 data-i18n="stack_delivery">Entrega</h3><p>GitHub Actions • CI/CD • Deploy • Rollback</p></div><div class="stack-group"><h3>Cloud</h3><p>AWS EC2 • ELB • RDS • S3</p></div><div class="stack-group"><h3 data-i18n="stack_analysis">Análise</h3><p>Risco • Evidências • UX • Requisitos • Produção</p></div>
+    </div></div></section>
+    <section class="section manifesto"><div class="container manifesto-inner"><span class="section-label">QUALITY MINDSET</span><blockquote data-i18n="manifesto">“Quando um defeito chega à produção, além de corrigi-lo, procuro entender quais validações poderiam ter identificado o risco antes do release.”</blockquote></div></section>
+    <section id="contato" class="section contact-section"><div class="container contact-grid"><div><span class="section-label" data-i18n="contact_label">CONTATO</span><h2 data-i18n="contact_title">Vamos conversar sobre qualidade de software?</h2><p data-i18n="contact_text">Meu portfólio e repositórios estão abertos para avaliação técnica.</p></div><div class="contact-actions"><a href="mailto:inforf@hotmail.com">inforf@hotmail.com ↗</a><a href="https://www.linkedin.com/in/ronaldo-ferreira-qa" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/inforf" target="_blank" rel="noopener">GitHub ↗</a><a href="docs/curriculo.pdf" download data-i18n="contact_cv">Currículo em PDF ↓</a></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><p>© 2026 Ronaldo Ferreira • Quality Assurance</p><p class="privacy"><span data-i18n="privacy_text">Este site utiliza Microsoft Clarity para análise de navegação e melhoria da experiência.</span></p></div></footer>
+</body></html>
