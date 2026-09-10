@@ -1,197 +1,84 @@
-# inforf.github.io — QA Portfolio (Website)
+# inforf.github.io — QA Portfolio
 
-Este repositório contém meu site de portfólio público.
+Site público do meu portfólio de Quality Assurance.
 
-O objetivo não é apenas me apresentar como profissional, mas demonstrar na prática como trabalho qualidade de software:  
-observação de comportamento, análise de risco, reprodução de cenários e prevenção de impacto ao usuário.
+🔗 https://inforf.github.io
 
-🔗 Acesse: https://inforf.github.io
-
+O objetivo é apresentar minha forma de pensar QA por meio de experiência real, análise de risco, testes exploratórios, automação e prevenção de falhas.
 
 ---
 
-## Propósito do site
+## Estrutura do projeto
 
-O site foi estruturado como um pequeno ecossistema de qualidade.
-
-Ele simula o fluxo real de um produto:
-
-1. entender quem é o usuário
-2. observar comportamento
-3. identificar riscos
-4. reproduzir cenários
-5. validar correções
-
-A ideia não é mostrar apenas automação.  
-É mostrar **como qualidade é construída antes da produção**.
-
-
----
-
-## Estrutura
-
-O site possui duas partes principais.
-
-### 1) Apresentação profissional
+### Portfólio principal
 
 A página inicial apresenta:
 
-- quem sou
-- forma de atuação
+- experiência profissional
 - visão de qualidade
-- links para repositórios
-- automação e documentação
+- stack e competências
+- projetos práticos
+- links para GitHub e LinkedIn
 
-Ela contextualiza o visitante:  
-QA não é somente executar testes — é entender o sistema, o usuário e o impacto do software no negócio.
+O foco não é apenas listar ferramentas, mas mostrar como qualidade pode apoiar decisões e reduzir risco para o usuário.
 
+### QA Playground
 
----
+O diretório `qa-playground/` contém um laboratório de testes manuais com falhas intencionais.
 
-### 2) QA Playground (ambiente com falhas intencionais)
+Cenários atuais:
 
-O QA Playground é uma aplicação web criada propositalmente com problemas.
+1. **Modal bloqueante** — funcional, UX e acessibilidade
+2. **API sem resposta / carregamento infinito** — integração, UX e resiliência
+3. **Formulário com validação incorreta** — funcional, dados e UX
 
-Ele não foi feito para ser perfeito.  
-Foi criado como um ambiente controlado para demonstrar como a qualidade é analisada.
+Cada cenário permite:
 
-Contém exemplos de:
+- reproduzir o problema manualmente
+- comparar comportamento esperado e observado
+- analisar impacto e risco
+- consultar hipóteses e recomendações
 
-- validação incorreta de formulário
-- inconsistências de navegação
-- falhas de comportamento
-- problemas de fluxo
-- cenários onde o sistema “funciona”, mas o usuário não consegue concluir a tarefa
-- problema de acessibilidade: contraste insuficiente entre fundo escuro e links após interação, dificultando a visualização
-
-Esse último caso surgiu a partir de feedback real de um visitante do site, indicando dificuldade para identificar elementos clicáveis.
-
-Isso reforça que qualidade não envolve apenas funcionamento técnico, mas também garantir que o sistema seja utilizável por diferentes perfis de usuário.
-
-> Muitos defeitos reais não derrubam o sistema.  
-> Eles impedem o usuário de utilizá-lo corretamente.
-
-O objetivo do playground é permitir observar:
-
-- como o problema aparece
-- como reproduzir
-- qual o impacto
-- qual o risco antes do release
-
+🔗 https://inforf.github.io/qa-playground/
 
 ---
 
 ## Relação com a automação
 
-Este repositório **não contém os testes automatizados**.  
-Ele contém o sistema que é testado.
+O QA Playground é o ambiente de exploração manual.
 
-A automação está no projeto:
+A suíte automatizada que reproduz esses mesmos cenários está em outro repositório:
 
 ➡ https://github.com/inforf/qa-playground-automation
 
-Os testes automatizados executam cenários contra este site, geram evidências e produzem relatórios de análise.
+Assim, os projetos ficam separados por responsabilidade:
 
-Ou seja:
+- **inforf.github.io / QA Playground** → exploração manual e análise
+- **qa-playground-automation** → regressão automatizada com Playwright
 
-- este repositório = sistema observado  
-- repositório de automação = validação técnica
+Há ainda um terceiro projeto independente:
 
+➡ https://github.com/inforf/qa-automation-portfolio
 
----
-
-## O que este projeto demonstra
-
-Este site foi pensado para demonstrar atividades reais de QA:
-
-- leitura de comportamento do usuário
-- exploração funcional
-- identificação de risco
-- análise de impacto
-- documentação clara
-- preparação para automação
-
-O foco não é encontrar erros por encontrar.
-
-O foco é responder:
-
-**isso pode chegar ao usuário final?**  
-**qual seria o impacto operacional?**
-
+Ele demonstra automação E2E, testes de API e integração contínua fora do Playground.
 
 ---
 
-## Análise de comportamento (Clarity)
-
-O site utiliza Microsoft Clarity para análise de comportamento de navegação.
-
-O objetivo não é identificar usuários, mas compreender como o sistema é utilizado na prática.  
-A ferramenta registra interações de forma anônima, permitindo observar:
-
-- áreas mais acessadas
-- fluxo de navegação
-- pontos de abandono
-- ações que não produzem o resultado esperado
-
-Nenhum dado pessoal, credencial ou informação sensível é coletado.
-
-A análise ajuda a validar hipóteses de qualidade:
-
-- o usuário entende o fluxo?
-- algum passo gera confusão?
-- existe fricção na interface?
-- uma funcionalidade funciona tecnicamente, mas não operacionalmente?
-
-Ou seja, a análise não observa *quem* está usando, mas *como* o sistema se comporta durante o uso.
-
-O objetivo é melhorar previsibilidade, reduzir erro operacional e identificar riscos antes de impactar o usuário final.
-
-
----
-
-## Filosofia de qualidade
-
-Software de qualidade não é aquele sem bugs.  
-É aquele em que o usuário não sofre o impacto das falhas.
-
-O objetivo do QA não é bloquear deploy.  
-É evitar que a equipe descubra problemas através do cliente.
-
-Quanto mais cedo o risco é identificado:
-- menor o custo
-- menor o impacto
-- maior a confiança na entrega
-
-Qualidade não é uma etapa do projeto.
-
-É um sistema de prevenção.
-
-
----
-
-## Tecnologias utilizadas
+## Tecnologias
 
 - HTML
 - CSS
 - JavaScript
-- GitHub Pages (hospedagem)
-- Microsoft Clarity (análise de comportamento)
-
+- GitHub Pages
+- Microsoft Clarity
 
 ---
 
-## Como utilizar
+## Microsoft Clarity
 
-Você pode usar o site como um ambiente de testes:
+O site utiliza Microsoft Clarity para observar padrões de navegação e pontos de fricção na experiência.
 
-1. navegar normalmente
-2. executar ações como usuário
-3. observar comportamentos inesperados
-4. reproduzir cenários
-5. comparar com os relatórios do repositório de automação
-
-Ele foi criado exatamente para isso.
-
+A intenção é usar comportamento real de navegação como mais uma fonte para levantar hipóteses de qualidade e usabilidade.
 
 ---
 
