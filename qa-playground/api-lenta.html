@@ -1,4 +1,109 @@
-<!doctype html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>QA Playground | API sem resposta</title><link rel="stylesheet" href="css/api-lenta.css"><script src="js/api-lenta.js" defer></script><script src="../js/global.js"></script></head><body><main class="container"><header class="case-header"><a class="back-link" href="index.html">← QA Playground</a><span class="case-number">CENÁRIO 02</span><h1>API lenta / carregamento infinito</h1><p class="subtitle">Uma requisição não responde e a interface continua esperando. Observe como o sistema comunica — ou não — esse estado.</p><div class="tags"><b>INTEGRAÇÃO</b><b>UX</b><b>RESILIÊNCIA</b><b class="risk">RISCO MÉDIO/ALTO</b></div></header><section class="experiment"><span class="eyebrow">ÁREA DE TESTE</span><div class="controls"><button id="loadData" class="btn-primary">Carregar dados</button><button id="cancelLoad" class="btn-secondary" disabled>Cancelar carregamento</button></div><section id="status" class="status hidden"><div class="spinner"></div><p>Carregando dados da API…</p></section><p class="hint">Objetivo: solicite os dados e avalie o comportamento quando a resposta nunca chega.</p></section><details class="analysis"><summary>Ver análise do QA <span>+</span></summary><div class="analysis-body"><div class="analysis-grid"><div><h2>Comportamento esperado</h2><p>A aplicação deve limitar a espera, informar falha e permitir nova tentativa ou saída segura.</p></div><div><h2>Comportamento observado</h2><p>A interface permanece em carregamento indefinido sem conclusão automática.</p></div><div><h2>Impacto</h2><p>O usuário não sabe se a ação está processando, falhou ou pode ser repetida.</p></div><div><h2>Risco</h2><p>Abandono, ações duplicadas e percepção de indisponibilidade.</p></div></div><h2>Passos para reproduzir</h2><pre>1. Clique em "Carregar dados"
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'self'; frame-src 'none'; script-src 'self' https://www.clarity.ms; style-src 'self'; img-src 'self' data: https://*.clarity.ms https://*.bing.com; connect-src 'self' https://*.clarity.ms https://*.bing.com; font-src 'self'; upgrade-insecure-requests"
+    />
+    <title>QA Playground | API sem resposta</title>
+    <link rel="stylesheet" href="css/api-lenta.css" />
+    <script src="js/api-lenta.js" defer></script>
+    <script src="../js/global.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <header class="case-header">
+        <a class="back-link" href="index.html">← QA Playground</a
+        ><span class="case-number">CENÁRIO 02</span>
+        <h1>API lenta / carregamento infinito</h1>
+        <p class="subtitle">
+          Uma requisição não responde e a interface continua esperando. Observe
+          como o sistema comunica — ou não — esse estado.
+        </p>
+        <div class="tags">
+          <b>INTEGRAÇÃO</b><b>UX</b><b>RESILIÊNCIA</b
+          ><b class="risk">RISCO MÉDIO/ALTO</b>
+        </div>
+      </header>
+      <section class="experiment">
+        <span class="eyebrow">ÁREA DE TESTE</span>
+        <div class="controls">
+          <button id="loadData" class="btn-primary">Carregar dados</button
+          ><button id="cancelLoad" class="btn-secondary" disabled>
+            Cancelar carregamento
+          </button>
+        </div>
+        <section id="status" class="status hidden">
+          <div class="spinner"></div>
+          <p>Carregando dados da API…</p>
+        </section>
+        <p class="hint">
+          Objetivo: solicite os dados e avalie o comportamento quando a resposta
+          nunca chega.
+        </p>
+      </section>
+      <details class="analysis">
+        <summary>Ver análise do QA <span>+</span></summary>
+        <div class="analysis-body">
+          <div class="analysis-grid">
+            <div>
+              <h2>Comportamento esperado</h2>
+              <p>
+                A aplicação deve limitar a espera, informar falha e permitir
+                nova tentativa ou saída segura.
+              </p>
+            </div>
+            <div>
+              <h2>Comportamento observado</h2>
+              <p>
+                A interface permanece em carregamento indefinido sem conclusão
+                automática.
+              </p>
+            </div>
+            <div>
+              <h2>Impacto</h2>
+              <p>
+                O usuário não sabe se a ação está processando, falhou ou pode
+                ser repetida.
+              </p>
+            </div>
+            <div>
+              <h2>Risco</h2>
+              <p>
+                Abandono, ações duplicadas e percepção de indisponibilidade.
+              </p>
+            </div>
+          </div>
+          <h2>Passos para reproduzir</h2>
+          <pre>
+1. Clique em "Carregar dados"
 2. Aguarde a resposta
 3. Observe que o loader não termina
-4. Use "Cancelar carregamento" para sair do experimento</pre><h2>Hipóteses</h2><ul><li>Timeout não configurado.</li><li>Serviço indisponível ou com alta latência.</li><li>Ausência de tratamento para demora excessiva.</li></ul><h2>Recomendação</h2><p>Definir timeout coerente, apresentar feedback acionável e oferecer retry/cancelamento conforme o fluxo de negócio.</p><a class="repo-link" href="https://github.com/inforf/qa-playground-automation" target="_blank" rel="noopener">Ver teste automatizado →</a></div></details></main></body></html>
+4. Use "Cancelar carregamento" para sair do experimento</pre
+          >
+          <h2>Hipóteses</h2>
+          <ul>
+            <li>Timeout não configurado.</li>
+            <li>Serviço indisponível ou com alta latência.</li>
+            <li>Ausência de tratamento para demora excessiva.</li>
+          </ul>
+          <h2>Recomendação</h2>
+          <p>
+            Definir timeout coerente, apresentar feedback acionável e oferecer
+            retry/cancelamento conforme o fluxo de negócio.
+          </p>
+          <a
+            class="repo-link"
+            href="https://github.com/inforf/qa-playground-automation"
+            target="_blank"
+            rel="noopener"
+            >Ver teste automatizado →</a
+          >
+        </div>
+      </details>
+    </main>
+  </body>
+</html>
