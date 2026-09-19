@@ -80,6 +80,8 @@ O site utiliza Microsoft Clarity para observar padrões de navegação e pontos 
 
 A intenção é usar comportamento real de navegação como mais uma fonte para levantar hipóteses de qualidade e usabilidade.
 
+O portfólio possui um banner próprio de privacidade. O visitante pode aceitar ou recusar cookies de análise, e a preferência é armazenada localmente no navegador. O Clarity recebe o consentimento por meio da API Consent V2, com armazenamento de anúncios desativado.
+
 ---
 
 ## Contato
