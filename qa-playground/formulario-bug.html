@@ -11,7 +11,7 @@
     <title>QA Playground | Validação inconsistente</title>
     <link rel="stylesheet" href="css/formulario-bug.css" />
     <script src="js/formulario-bug.js" defer></script>
-    <script src="../js/global.js"></script>
+    <script src="../js/global.js" defer></script>
   </head>
   <body>
     <main class="container">
@@ -114,5 +114,32 @@
         </div>
       </details>
     </main>
+
+    <section class="privacy-panel" role="dialog" aria-modal="true" aria-labelledby="privacy-title" hidden>
+      <div class="privacy-card">
+        <button type="button" class="privacy-close" aria-label="Fechar preferências de privacidade" data-close-privacy>×</button>
+        <span class="kicker">PRIVACIDADE</span>
+        <h2 id="privacy-title">Privacidade e cookies</h2>
+        <p>Este laboratório faz parte do portfólio e utiliza o Microsoft Clarity para analisar a navegação e identificar oportunidades de melhoria na experiência.</p>
+        <p>Você pode aceitar ou recusar cookies de análise. Sua escolha vale para todo o portfólio neste navegador e pode ser alterada na política de privacidade.</p>
+        <div class="privacy-actions">
+          <button type="button" class="privacy-btn privacy-secondary" data-consent="rejected">Recusar</button>
+          <button type="button" class="privacy-btn privacy-primary" data-consent="accepted">Aceitar análise</button>
+        </div>
+        <a class="privacy-policy-link" href="../privacidade.html">Ler política de privacidade →</a>
+      </div>
+    </section>
+
+    <aside class="cookie-banner" aria-label="Preferências de privacidade" hidden>
+      <div>
+        <strong>Privacidade e cookies</strong>
+        <p>Uso o Microsoft Clarity para analisar a navegação e melhorar este laboratório. Você decide se permite cookies de análise.</p>
+      </div>
+      <div class="cookie-actions">
+        <button type="button" class="privacy-btn privacy-secondary" data-consent="rejected">Recusar</button>
+        <button type="button" class="privacy-btn privacy-primary" data-consent="accepted">Aceitar</button>
+        <button type="button" class="cookie-details" data-open-privacy>Saiba mais</button>
+      </div>
+    </aside>
   </body>
 </html>
